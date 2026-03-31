@@ -1,0 +1,31 @@
+=== ERROR PATTERN ANALYSIS ===
+Recent errors in backend logs:
+backend-1  | 2026-03-31 X:X:X::X,147 - app.parsers.nmap_parser - WARNING - Skipping malformed host element: (psycopg2.errors.ForeignKeyViolation) insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+backend-1  | (Background on this error at: https://sqlalche.me/e/20/gkpj)
+backend-1  | 2026-03-31 X:X:X::X,156 - app.parsers.nmap_parser - WARNING - Skipping malformed host element: (psycopg2.errors.ForeignKeyViolation) insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+backend-1  | (Background on this error at: https://sqlalche.me/e/20/gkpj)
+backend-1  | 2026-03-31 X:X:X::X,192 - app.parsers.nmap_parser - WARNING - Skipping malformed host element: (psycopg2.errors.ForeignKeyViolation) insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+backend-1  | (Background on this error at: https://sqlalche.me/e/20/gkpj)
+backend-1  | 2026-03-31 X:X:X::X,196 - app.parsers.nmap_parser - WARNING - Skipping malformed host element: (psycopg2.errors.ForeignKeyViolation) insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+backend-1  | (Background on this error at: https://sqlalche.me/e/20/gkpj)
+backend-1  | 2026-03-31 X:X:X::X,463 - app.parsers.nmap_parser - WARNING - XML parsing halted for all_subnets_from_CO_office_INC.xml (likely truncated/incomplete scan): Extra content at the end of the document, line 158019, column 1 (all_subnets_from_CO_office_INC.xml, line 158019). Recovered 51173 hosts before the error.
+backend-1  | 2026-03-31 X:X:X::X,474 - app.services.ingestion_service - ERROR - Failed ingestion job 5
+backend-1  | Traceback (most recent call last):
+backend-1  | psycopg2.errors.ForeignKeyViolation: insert or update on table "ingestion_jobs" violates foreign key constraint "ingestion_jobs_scan_id_fkey"
+backend-1  | The above exception was the direct cause of the following exception:
+backend-1  | Traceback (most recent call last):
+backend-1  |     raise exc_value.with_traceback(exc_tb)
+backend-1  |     self._handle_dbapi_exception(
+backend-1  |   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+backend-1  |     raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+backend-1  | sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) insert or update on table "ingestion_jobs" violates foreign key constraint "ingestion_jobs_scan_id_fkey"
+backend-1  | (Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+Recent CORS-related issues:
+backend-1  | 2026-03-31TX:X:X::X.060406994Z 2026-03-31 X:X:X::X,060 - app.main - INFO - CORS origins: ['https://X.X.X.X', 'https://X.X.X.X:3000', 'https://localhost', 'https://localhost:3000', 'https://127.0.0.1', 'https://127.0.0.1:3000']
+backend-1   | 2026-03-31TX:X:X::X.829443566Z 2026-03-31 X:X:X::X,829 - app.main - INFO - CORS origins: ['https://X.X.X.X', 'https://X.X.X.X:3000', 'https://localhost', 'https://localhost:3000', 'https://127.0.0.1', 'https://127.0.0.1:3000']
+
+Database connection issues:
+backend-1  |     c = connection.execute(
+backend-1  |   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+backend-1  |     return connection._execute_clauseelement(

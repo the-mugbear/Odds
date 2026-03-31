@@ -1,0 +1,161 @@
+=== DATABASE CONTAINER LOGS ===
+db-1  | The files belonging to this database system will be owned by user "postgres".
+db-1  | This user must also own the server process.
+db-1  | 
+db-1  | The database cluster will be initialized with locale "en_US.utf8".
+db-1  | The default database encoding has accordingly been set to "UTF8".
+db-1  | The default text search configuration will be set to "english".
+db-1  | 
+db-1  | Data page checksums are disabled.
+db-1  | 
+db-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db-1  | creating subdirectories ... ok
+db-1  | selecting dynamic shared memory implementation ... posix
+db-1  | selecting default max_connections ... 100
+db-1  | selecting default shared_buffers ... 128MB
+db-1  | selecting default time zone ... Etc/UTC
+db-1  | creating configuration files ... ok
+db-1  | running bootstrap script ... ok
+db-1  | performing post-bootstrap initialization ... ok
+db-1  | initdb: warning: enabling "trust" authentication for local connections
+db-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db-1  | syncing data to disk ... ok
+db-1  | 
+db-1  | 
+db-1  | Success. You can now start the database server using:
+db-1  | 
+db-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db-1  | 
+db-1  | waiting for server to start....2026-03-31 X:X:X::X.890 UTC [47] LOG:  starting PostgreSQL 16.13 (Debian 16.13-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-03-31 X:X:X::X.890 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-03-31 X:X:X::X.892 UTC [50] LOG:  database system was shut down at 2026-03-31 X:X:X::X UTC
+db-1  | 2026-03-31 X:X:X::X.896 UTC [47] LOG:  database system is ready to accept connections
+db-1  |  done
+db-1  | server started
+db-1  | CREATE DATABASE
+db-1  | 
+db-1  | 
+db-1  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/10-init-ssl.sh
+db-1  | [init-ssl] SSL certificates exist but are not readable by postgres user; leaving SSL disabled
+db-1  | 
+db-1  | 2026-03-31 X:X:X::X.098 UTC [47] LOG:  received fast shutdown request
+db-1  | waiting for server to shut down....2026-03-31 X:X:X::X.099 UTC [47] LOG:  aborting any active transactions
+db-1  | 2026-03-31 X:X:X::X.101 UTC [47] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+db-1  | 2026-03-31 X:X:X::X.102 UTC [48] LOG:  shutting down
+db-1  | 2026-03-31 X:X:X::X.102 UTC [48] LOG:  checkpoint starting: shutdown immediate
+db-1  | 2026-03-31 X:X:X::X.117 UTC [48] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.002 s, total=0.016 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4273 kB, estimate=4273 kB; lsn=0/191F0F0, redo lsn=0/191F0F0
+db-1  | 2026-03-31 X:X:X::X.125 UTC [47] LOG:  database system is shut down
+db-1  |  done
+db-1  | server stopped
+db-1  | 
+db-1  | PostgreSQL init process complete; ready for start up.
+db-1  | 
+db-1  | 2026-03-31 X:X:X::X.218 UTC [1] LOG:  starting PostgreSQL 16.13 (Debian 16.13-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-03-31 X:X:X::X.219 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1  | 2026-03-31 X:X:X::X.219 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1  | 2026-03-31 X:X:X::X.219 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-03-31 X:X:X::X.223 UTC [64] LOG:  database system was shut down at 2026-03-31 X:X:X::X UTC
+db-1  | 2026-03-31 X:X:X::X.227 UTC [1] LOG:  database system is ready to accept connections
+db-1  | 2026-03-31 X:X:X::X.354 UTC [133] ERROR:  duplicate key value violates unique constraint "uq_host_script"
+db-1  | 2026-03-31 X:X:X::X.354 UTC [133] DETAIL:  Key (host_id, script_id)=(2, smb2-time) already exists.
+db-1  | 2026-03-31 X:X:X::X.354 UTC [133] STATEMENT:  INSERT INTO host_scripts_v2 (host_id, script_id, output, scan_id) SELECT p0::INTEGER, p1::VARCHAR, p2::TEXT, p3::INTEGER FROM (VALUES (2, 'smb2-time', '
+db-1  | 	  date: 2026-03-24TX:X:X::X
+db-1  | 	  start_date: N/A', 3, 0), (2, 'smb2-security-mode', '
+db-1  | 	  3.1.1: 
+db-1  | 	    Message signing enabled but not required', 3, 1)) AS imp_sen(p0, p1, p2, p3, sen_counter) ORDER BY sen_counter RETURNING host_scripts_v2.id, host_scripts_v2.first_seen, host_scripts_v2.last_seen, host_scripts_v2.id AS id__1
+db-1  | 2026-03-31 X:X:X::X.501 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.501 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.501 UTC [132] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 4
+db-1  | 2026-03-31 X:X:X::X.604 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.604 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.604 UTC [134] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 10
+db-1  | 2026-03-31 X:X:X::X.644 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.644 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.644 UTC [133] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 13
+db-1  | 2026-03-31 X:X:X::X.649 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.649 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.649 UTC [91] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'syn-ack', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.671 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.671 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.671 UTC [132] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 16
+db-1  | 2026-03-31 X:X:X::X.674 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.674 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.674 UTC [134] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.678 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.678 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.678 UTC [133] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.682 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.682 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.682 UTC [91] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.685 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.685 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.685 UTC [132] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.689 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.689 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.689 UTC [134] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.693 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.693 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.693 UTC [133] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'syn-ack', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.766 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.766 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.766 UTC [91] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 25
+db-1  | 2026-03-31 X:X:X::X.782 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.782 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.782 UTC [132] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 34
+db-1  | 2026-03-31 X:X:X::X.786 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.786 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.786 UTC [134] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'syn-ack', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.790 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.790 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.790 UTC [133] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'syn-ack', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.794 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.794 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.794 UTC [91] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.799 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.799 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.799 UTC [132] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.844 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.844 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.844 UTC [134] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 51
+db-1  | 2026-03-31 X:X:X::X.864 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.864 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.864 UTC [133] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 54
+db-1  | 2026-03-31 X:X:X::X.868 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.868 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.868 UTC [91] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'syn-ack', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.945 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.945 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.945 UTC [132] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 55
+db-1  | 2026-03-31 X:X:X::X.969 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.969 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.969 UTC [134] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 58
+db-1  | 2026-03-31 X:X:X::X.005 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.005 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.005 UTC [133] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 59
+db-1  | 2026-03-31 X:X:X::X.029 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.029 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.029 UTC [91] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 18
+db-1  | 2026-03-31 X:X:X::X.114 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.114 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.114 UTC [132] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 20
+db-1  | 2026-03-31 X:X:X::X.119 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.119 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.119 UTC [134] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.132 UTC [133] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.132 UTC [133] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.132 UTC [133] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 28
+db-1  | 2026-03-31 X:X:X::X.145 UTC [91] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.145 UTC [91] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.145 UTC [91] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 29
+db-1  | 2026-03-31 X:X:X::X.155 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.155 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.155 UTC [132] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 30
+db-1  | 2026-03-31 X:X:X::X.190 UTC [134] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.190 UTC [134] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.190 UTC [134] STATEMENT:  UPDATE hosts_v2 SET last_seen=now(), last_updated_scan_id=3 WHERE hosts_v2.id = 32
+db-1  | 2026-03-31 X:X:X::X.195 UTC [132] ERROR:  insert or update on table "hosts_v2" violates foreign key constraint "hosts_v2_last_updated_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.195 UTC [132] DETAIL:  Key (last_updated_scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.195 UTC [132] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'conn-refused', NULL, NULL, NULL, NULL, NULL, NULL, 3) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-03-31 X:X:X::X.471 UTC [91] ERROR:  insert or update on table "ingestion_jobs" violates foreign key constraint "ingestion_jobs_scan_id_fkey"
+db-1  | 2026-03-31 X:X:X::X.471 UTC [91] DETAIL:  Key (scan_id)=(3) is not present in table "scans".
+db-1  | 2026-03-31 X:X:X::X.471 UTC [91] STATEMENT:  UPDATE ingestion_jobs SET status='completed', message='Nmap XML file processed successfully', tool_name='nmap', scan_id=3, completed_at='2026-03-31TX:X:X::X.470454'::timestamp WHERE ingestion_jobs.id = 5
