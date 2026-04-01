@@ -1,0 +1,1216 @@
+=== ALL CONTAINER LOGS COMBINED ===
+db-1  | 2026-04-01TX:X:X::X.154984790Z The files belonging to this database system will be owned by user "postgres".
+db-1  | 2026-04-01TX:X:X::X.155024433Z This user must also own the server process.
+db-1  | 2026-04-01TX:X:X::X.155027820Z 
+db-1  | 2026-04-01TX:X:X::X.155034613Z The database cluster will be initialized with locale "en_US.utf8".
+db-1  | 2026-04-01TX:X:X::X.155036831Z The default database encoding has accordingly been set to "UTF8".
+db-1  | 2026-04-01TX:X:X::X.155038772Z The default text search configuration will be set to "english".
+db-1  | 2026-04-01TX:X:X::X.155040580Z 
+db-1  | 2026-04-01TX:X:X::X.155042227Z Data page checksums are disabled.
+db-1  | 2026-04-01TX:X:X::X.155043816Z 
+db-1  | 2026-04-01TX:X:X::X.155696539Z fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db-1  | 2026-04-01TX:X:X::X.155706153Z creating subdirectories ... ok
+db-1  | 2026-04-01TX:X:X::X.155708554Z selecting dynamic shared memory implementation ... posix
+db-1  | 2026-04-01TX:X:X::X.170708014Z selecting default max_connections ... 100
+db-1  | 2026-04-01TX:X:X::X.194552365Z selecting default shared_buffers ... 128MB
+db-1  | 2026-04-01TX:X:X::X.206331741Z selecting default time zone ... Etc/UTC
+db-1  | 2026-04-01TX:X:X::X.207142668Z creating configuration files ... ok
+db-1  | 2026-04-01TX:X:X::X.338842372Z running bootstrap script ... ok
+db-1  | 2026-04-01TX:X:X::X.735750634Z performing post-bootstrap initialization ... ok
+db-1  | 2026-04-01TX:X:X::X.784584691Z syncing data to disk ... ok
+db-1  | 2026-04-01TX:X:X::X.784603475Z 
+db-1  | 2026-04-01TX:X:X::X.784616287Z initdb: warning: enabling "trust" authentication for local connections
+db-1  | 2026-04-01TX:X:X::X.784661117Z 
+db-1  | 2026-04-01TX:X:X::X.784664234Z Success. You can now start the database server using:
+db-1  | 2026-04-01TX:X:X::X.784666102Z 
+db-1  | 2026-04-01TX:X:X::X.784662496Z initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db-1  | 2026-04-01TX:X:X::X.784667708Z     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db-1  | 2026-04-01TX:X:X::X.784677358Z 
+db-1  | 2026-04-01TX:X:X::X.829559739Z waiting for server to start....2026-04-01 X:X:X::X.829 UTC [49] LOG:  starting PostgreSQL 16.13 (Debian 16.13-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-04-01TX:X:X::X.829921702Z 2026-04-01 X:X:X::X.829 UTC [49] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-04-01TX:X:X::X.833274202Z 2026-04-01 X:X:X::X.832 UTC [52] LOG:  database system was shut down at 2026-04-01 X:X:X::X UTC
+db-1  | 2026-04-01TX:X:X::X.837570112Z 2026-04-01 X:X:X::X.836 UTC [49] LOG:  database system is ready to accept connections
+db-1  | 2026-04-01TX:X:X::X.914738809Z  done
+db-1  | 2026-04-01TX:X:X::X.914835971Z server started
+db-1  | 2026-04-01TX:X:X::X.025837504Z CREATE DATABASE
+db-1  | 2026-04-01TX:X:X::X.026360689Z 
+db-1  | 2026-04-01TX:X:X::X.026485262Z 
+db-1  | 2026-04-01TX:X:X::X.026548314Z /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/10-init-ssl.sh
+db-1  | 2026-04-01TX:X:X::X.028714801Z [init-ssl] SSL certificates exist but are not readable by postgres user; leaving SSL disabled
+db-1  | 2026-04-01TX:X:X::X.029168086Z 
+db-1  | 2026-04-01TX:X:X::X.029982195Z 2026-04-01 X:X:X::X.029 UTC [49] LOG:  received fast shutdown request
+db-1  | 2026-04-01TX:X:X::X.030364067Z waiting for server to shut down....2026-04-01 X:X:X::X.030 UTC [49] LOG:  aborting any active transactions
+db-1  | 2026-04-01TX:X:X::X.032156172Z 2026-04-01 X:X:X::X.032 UTC [49] LOG:  background worker "logical replication launcher" (PID 55) exited with exit code 1
+db-1  | 2026-04-01TX:X:X::X.032264890Z 2026-04-01 X:X:X::X.032 UTC [50] LOG:  shutting down
+db-1  | 2026-04-01TX:X:X::X.032675902Z 2026-04-01 X:X:X::X.032 UTC [50] LOG:  checkpoint starting: shutdown immediate
+db-1  | 2026-04-01TX:X:X::X.053013549Z 2026-04-01 X:X:X::X.052 UTC [50] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.002 s, total=0.021 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4273 kB, estimate=4273 kB; lsn=0/191F0F0, redo lsn=0/191F0F0
+db-1  | 2026-04-01TX:X:X::X.058628134Z 2026-04-01 X:X:X::X.058 UTC [49] LOG:  database system is shut down
+db-1  | 2026-04-01TX:X:X::X.130101447Z  done
+db-1  | 2026-04-01TX:X:X::X.130122002Z server stopped
+db-1  | 2026-04-01TX:X:X::X.132271091Z 
+db-1  | 2026-04-01TX:X:X::X.132286146Z PostgreSQL init process complete; ready for start up.
+db-1  | 2026-04-01TX:X:X::X.132288750Z 
+db-1  | 2026-04-01TX:X:X::X.151876895Z 2026-04-01 X:X:X::X.151 UTC [1] LOG:  starting PostgreSQL 16.13 (Debian 16.13-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-04-01TX:X:X::X.152008719Z 2026-04-01 X:X:X::X.151 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1  | 2026-04-01TX:X:X::X.152013811Z 2026-04-01 X:X:X::X.151 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1  | 2026-04-01TX:X:X::X.152648334Z 2026-04-01 X:X:X::X.152 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-04-01TX:X:X::X.155058626Z 2026-04-01 X:X:X::X.154 UTC [66] LOG:  database system was shut down at 2026-04-01 X:X:X::X UTC
+db-1  | 2026-04-01TX:X:X::X.158918064Z 2026-04-01 X:X:X::X.158 UTC [1] LOG:  database system is ready to accept connections
+db-1  | 2026-04-01TX:X:X::X.380603068Z 2026-04-01 X:X:X::X.380 UTC [204] ERROR:  deadlock detected
+db-1  | 2026-04-01TX:X:X::X.380643192Z 2026-04-01 X:X:X::X.380 UTC [204] DETAIL:  Process 204 waits for ShareLock on transaction 2159; blocked by process 203.
+db-1  | 2026-04-01TX:X:X::X.380646892Z 	Process 203 waits for ShareLock on transaction 2579; blocked by process 204.
+db-1  | 2026-04-01TX:X:X::X.380650102Z 	Process 204: INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', NULL, 'ArubaOS-CX - R9
+db-1  | 2026-04-01TX:X:X::X.380653227Z 	Cisco Catalyst 9200 Series Switches
+db-1  | 2026-04-01TX:X:X::X.380655630Z 	Cisco Catalyst 9300 Series Switches
+db-1  | 2026-04-01TX:X:X::X.380669295Z 	Cisco Catalyst IE9300 Rugged Series
+db-1  | 2026-04-01TX:X:X::X.380671164Z 	Nutanix', NULL, NULL, NULL, NULL, NULL, 8) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-04-01TX:X:X::X.380673081Z 	Process 203: INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', 'echo-reply', 'Linux 4.19 - 5.15', 'Linux', '4.X', 'general purpose', 'Linux', 98, 7) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-04-01TX:X:X::X.380675439Z 2026-04-01 X:X:X::X.380 UTC [204] HINT:  See server log for query details.
+db-1  | 2026-04-01TX:X:X::X.380677310Z 2026-04-01 X:X:X::X.380 UTC [204] CONTEXT:  while inserting index tuple (4,1) in relation "ix_hosts_v2_ip_address"
+db-1  | 2026-04-01TX:X:X::X.380679348Z 2026-04-01 X:X:X::X.380 UTC [204] STATEMENT:  INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES ('X.X.X.X', NULL, 'up', NULL, 'ArubaOS-CX - R9
+db-1  | 2026-04-01TX:X:X::X.380681517Z 	Cisco Catalyst 9200 Series Switches
+db-1  | 2026-04-01TX:X:X::X.380683135Z 	Cisco Catalyst 9300 Series Switches
+db-1  | 2026-04-01TX:X:X::X.380685164Z 	Cisco Catalyst IE9300 Rugged Series
+db-1  | 2026-04-01TX:X:X::X.380686825Z 	Nutanix', NULL, NULL, NULL, NULL, NULL, 8) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen
+db-1  | 2026-04-01TX:X:X::X.232383876Z 2026-04-01 X:X:X::X.232 UTC [64] LOG:  checkpoint starting: time
+db-1  | 2026-04-01TX:X:X::X.751921948Z 2026-04-01 X:X:X::X.751 UTC [64] LOG:  checkpoint complete: wrote 700 buffers (4.3%); 0 WAL file(s) added, 0 removed, 1 recycled; write=69.517 s, sync=0.002 s, total=69.520 s; sync files=348, longest=0.001 s, average=0.001 s; distance=11230 kB, estimate=11230 kB; lsn=0/2424430, redo lsn=0/24169F8
+db-1  | 2026-04-01TX:X:X::X.848572095Z 2026-04-01 X:X:X::X.848 UTC [64] LOG:  checkpoint starting: time
+db-1  | 2026-04-01TX:X:X::X.852568015Z 2026-04-01 X:X:X::X.852 UTC [64] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.003 s, sync=0.001 s, total=1.005 s; sync files=7, longest=0.001 s, average=0.001 s; distance=61 kB, estimate=10113 kB; lsn=0/2425EE0, redo lsn=0/2425EA8
+db-1  | 2026-04-01TX:X:X::X.926881648Z 2026-04-01 X:X:X::X.926 UTC [64] LOG:  checkpoint starting: time
+db-1  | 2026-04-01TX:X:X::X.331451784Z 2026-04-01 X:X:X::X.331 UTC [64] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.403 s, sync=0.001 s, total=1.405 s; sync files=6, longest=0.001 s, average=0.001 s; distance=58 kB, estimate=9107 kB; lsn=0/2434780, redo lsn=0/2434748
+frontend-1  | 2026-04-01TX:X:X::X.078821512Z /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+frontend-1  | 2026-04-01TX:X:X::X.078873700Z /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+frontend-1  | 2026-04-01TX:X:X::X.079436401Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+frontend-1  | 2026-04-01TX:X:X::X.080832823Z 10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+frontend-1  | 2026-04-01TX:X:X::X.081059087Z /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+frontend-1  | 2026-04-01TX:X:X::X.081728755Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+frontend-1  | 2026-04-01TX:X:X::X.084835764Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+frontend-1  | 2026-04-01TX:X:X::X.086098601Z /docker-entrypoint.sh: Configuration complete; ready for start up
+frontend-1  | 2026-04-01TX:X:X::X.098840291Z 2026/04/01 X:X:X::X [notice] 1#1: using the "epoll" event method
+frontend-1  | 2026-04-01TX:X:X::X.098956591Z 2026/04/01 X:X:X::X [notice] 1#1: nginx/1.29.7
+backend-1   | 2026-04-01TX:X:X::X.473062033Z Ingestion storage /app/uploads/ingestion_queue not writable, falling back to /tmp/networkmapper_ingestion/916cf5bab03e4b108d4f71f27e16d132
+frontend-1  | 2026-04-01TX:X:X::X.098988298Z 2026/04/01 X:X:X::X [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+backend-1   | 2026-04-01TX:X:X::X.028166367Z INFO:     Started server process [1]
+backend-1   | 2026-04-01TX:X:X::X.028222456Z INFO:     Waiting for application startup.
+backend-1   | 2026-04-01TX:X:X::X.028422989Z 2026-04-01 X:X:X::X,028 - app.main - INFO - NetworkMapper API starting up...
+backend-1   | 2026-04-01TX:X:X::X.028515945Z 2026-04-01 X:X:X::X,028 - app.main - INFO - Running backend v1.3.0 (frontend v1.5.0)
+backend-1   | 2026-04-01TX:X:X::X.028528273Z 2026-04-01 X:X:X::X,028 - app.main - INFO - CORS origins: ['https://X.X.X.X', 'https://X.X.X.X:3000', 'https://localhost', 'https://localhost:3000', 'https://127.0.0.1', 'https://127.0.0.1:3000']
+backend-1   | 2026-04-01TX:X:X::X.454747959Z 2026-04-01 X:X:X::X,454 - app.main - INFO - ============================================================
+backend-1   | 2026-04-01TX:X:X::X.454805347Z 2026-04-01 X:X:X::X,454 - app.main - INFO - DEFAULT ADMIN ACCOUNT CREATED
+backend-1   | 2026-04-01TX:X:X::X.454815287Z 2026-04-01 X:X:X::X,454 - app.main - INFO -   Username: admin
+backend-1   | 2026-04-01TX:X:X::X.454817641Z 2026-04-01 X:X:X::X,454 - app.main - INFO -   Password: Bb7^FBYwP!kHZ&7O
+backend-1   | 2026-04-01TX:X:X::X.454855222Z 2026-04-01 X:X:X::X,454 - app.main - INFO -   *** CHANGE THIS PASSWORD IMMEDIATELY ***
+backend-1   | 2026-04-01TX:X:X::X.454861102Z 2026-04-01 X:X:X::X,454 - app.main - INFO - ============================================================
+backend-1   | 2026-04-01TX:X:X::X.455117471Z INFO:     Application startup complete.
+backend-1   | 2026-04-01TX:X:X::X.455419001Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+backend-1   | 2026-04-01TX:X:X::X.892309655Z INFO:     127.0.0.1:57124 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.277116394Z INFO:     Shutting down
+backend-1   | 2026-04-01TX:X:X::X.377511761Z INFO:     Waiting for application shutdown.
+backend-1   | 2026-04-01TX:X:X::X.377711928Z INFO:     Application shutdown complete.
+backend-1   | 2026-04-01TX:X:X::X.377754604Z INFO:     Finished server process [1]
+backend-1   | 2026-04-01TX:X:X::X.541334492Z Ingestion storage /app/uploads/ingestion_queue not writable, falling back to /tmp/networkmapper_ingestion/061e55a157624f9d8657998f034ab79f
+backend-1   | 2026-04-01TX:X:X::X.897271610Z INFO:     Started server process [1]
+backend-1   | 2026-04-01TX:X:X::X.902522738Z INFO:     Waiting for application startup.
+backend-1   | 2026-04-01TX:X:X::X.902552776Z 2026-04-01 X:X:X::X,897 - app.main - INFO - NetworkMapper API starting up...
+backend-1   | 2026-04-01TX:X:X::X.902566678Z 2026-04-01 X:X:X::X,897 - app.main - INFO - Running backend v1.3.0 (frontend v1.5.0)
+backend-1   | 2026-04-01TX:X:X::X.902568766Z 2026-04-01 X:X:X::X,897 - app.main - INFO - CORS origins: ['https://X.X.X.X', 'https://X.X.X.X:3000', 'https://localhost', 'https://localhost:3000', 'https://127.0.0.1', 'https://127.0.0.1:3000']
+backend-1   | 2026-04-01TX:X:X::X.006179217Z INFO:     Application startup complete.
+backend-1   | 2026-04-01TX:X:X::X.006512893Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+backend-1   | 2026-04-01TX:X:X::X.027181622Z INFO:     127.0.0.1:34484 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.091974915Z INFO:     127.0.0.1:59886 - "GET /health HTTP/1.1" 200 OK
+frontend-1  | 2026-04-01TX:X:X::X.099029087Z 2026/04/01 X:X:X::X [notice] 1#1: OS: Linux 6.10.11-amd64
+backend-1   | 2026-04-01TX:X:X::X.167753931Z INFO:     127.0.0.1:45720 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.688795239Z INFO:     X.X.X.X:60990 - "GET /api/v1/auth/profile HTTP/1.1" 401 Unauthorized
+backend-1   | 2026-04-01TX:X:X::X.732497733Z INFO:     X.X.X.X:60996 - "GET /api/v1/dashboard/stats HTTP/1.1" 401 Unauthorized
+frontend-1  | 2026-04-01TX:X:X::X.099039285Z 2026/04/01 X:X:X::X [notice] 1#1: getrlimit(RLIMIT_NOFILE): 2147483584:2147483584
+frontend-1  | 2026-04-01TX:X:X::X.099197916Z 2026/04/01 X:X:X::X [notice] 1#1: start worker processes
+frontend-1  | 2026-04-01TX:X:X::X.099368040Z 2026/04/01 X:X:X::X [notice] 1#1: start worker process 21
+frontend-1  | 2026-04-01TX:X:X::X.099904447Z 2026/04/01 X:X:X::X [notice] 1#1: start worker process 22
+frontend-1  | 2026-04-01TX:X:X::X.099911363Z 2026/04/01 X:X:X::X [notice] 1#1: start worker process 23
+frontend-1  | 2026-04-01TX:X:X::X.099913443Z 2026/04/01 X:X:X::X [notice] 1#1: start worker process 24
+frontend-1  | 2026-04-01TX:X:X::X.142109872Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.209589376Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.275995846Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.335788542Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.186346536Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /dashboard HTTP/2.0" 200 599 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.400743981Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /assets/index-D4v3p1uG.js HTTP/2.0" 200 275801 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.689073742Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/auth/profile HTTP/2.0" 401 26 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.732748535Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/stats HTTP/2.0" 401 26 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.733007848Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=6 HTTP/2.0" 401 26 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.733267333Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 401 26 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.733584777Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/risk-insights HTTP/2.0" 401 26 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.762545933Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /login HTTP/2.0" 200 599 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.401431021Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.326119127Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/auth/login HTTP/2.0" 200 366 "https://X.X.X.X/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.483821685Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=6 HTTP/2.0" 200 2 "https://X.X.X.X/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.487638092Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.490815389Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/risk-insights HTTP/2.0" 200 79 "https://X.X.X.X/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.509461231Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/stats HTTP/2.0" 200 356 "https://X.X.X.X/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.366455545Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scopes/ HTTP/2.0" 200 2 "https://X.X.X.X/scopes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.371167532Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scopes/coverage?limit=25 HTTP/2.0" 200 181 "https://X.X.X.X/scopes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.970928078Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/scopes/upload-subnets HTTP/2.0" 200 155 "https://X.X.X.X/scopes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.057734417Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scopes/ HTTP/2.0" 200 111 "https://X.X.X.X/scopes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.058628029Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scopes/coverage?limit=25 HTTP/2.0" 200 182 "https://X.X.X.X/scopes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.674317738Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 2 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.675252698Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scans/?skip=0&limit=100 HTTP/2.0" 200 2 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.475933563Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.823514871Z 2026/04/01 X:X:X::X [warn] 23#23: *60 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: X.X.X.X, server: _, request: "POST /api/v1/upload/ HTTP/2.0", host: "X.X.X.X", referrer: "https://X.X.X.X/scans"
+frontend-1  | 2026-04-01TX:X:X::X.073231332Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/upload/ HTTP/2.0" 200 158 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.732835154Z INFO:     X.X.X.X:32774 - "GET /api/v1/upload/jobs?limit=6 HTTP/1.1" 401 Unauthorized
+backend-1   | 2026-04-01TX:X:X::X.733100768Z INFO:     X.X.X.X:32786 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 401 Unauthorized
+backend-1   | 2026-04-01TX:X:X::X.733411731Z INFO:     X.X.X.X:32788 - "GET /api/v1/dashboard/risk-insights HTTP/1.1" 401 Unauthorized
+backend-1   | 2026-04-01TX:X:X::X.231032344Z INFO:     127.0.0.1:49398 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.325819559Z INFO:     X.X.X.X:58838 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.482605138Z INFO:     X.X.X.X:58868 - "GET /api/v1/upload/jobs?limit=6 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.487222737Z INFO:     X.X.X.X:58870 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.490060204Z INFO:     X.X.X.X:58852 - "GET /api/v1/dashboard/risk-insights HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.509243740Z INFO:     X.X.X.X:58848 - "GET /api/v1/dashboard/stats HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.295553891Z INFO:     127.0.0.1:35154 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.366096759Z INFO:     X.X.X.X:57388 - "GET /api/v1/scopes/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.370879262Z INFO:     X.X.X.X:57402 - "GET /api/v1/scopes/coverage?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.970619497Z INFO:     X.X.X.X:33078 - "POST /api/v1/scopes/upload-subnets HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.057297717Z INFO:     X.X.X.X:33090 - "GET /api/v1/scopes/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.058393492Z INFO:     X.X.X.X:33100 - "GET /api/v1/scopes/coverage?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.673867834Z INFO:     X.X.X.X:33110 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.675028147Z INFO:     X.X.X.X:33104 - "GET /api/v1/scans/?skip=0&limit=100 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.069849308Z 2026-04-01 X:X:X::X,069 - app.services.ingestion_service - INFO - Queued ingestion job 1 for masscan_discovery_US_VM.txt (373220 bytes)
+backend-1   | 2026-04-01TX:X:X::X.072102449Z INFO:     X.X.X.X:49064 - "POST /api/v1/upload/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.124322904Z 2026-04-01 X:X:X::X,124 - app.services.ingestion_service - INFO - Job 1: attempting parser GnmapParser for masscan_discovery_US_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.124373145Z 2026-04-01 X:X:X::X,124 - app.parsers.gnmap_parser - INFO - Starting parse of .gnmap file masscan_discovery_US_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.125000785Z 2026-04-01 X:X:X::X,124 - app.parsers.gnmap_parser - INFO - Loaded .gnmap file masscan_discovery_US_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.125043545Z 2026-04-01 X:X:X::X,124 - app.parsers.gnmap_parser - INFO - Creating scan record for masscan_discovery_US_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.133750031Z 2026-04-01 X:X:X::X,133 - app.parsers.gnmap_parser - INFO - Saving initial scan record to database
+backend-1   | 2026-04-01TX:X:X::X.138750252Z 2026-04-01 X:X:X::X,138 - app.parsers.gnmap_parser - INFO - Found 0 hosts to parse
+backend-1   | 2026-04-01TX:X:X::X.138762419Z 2026-04-01 X:X:X::X,138 - app.parsers.gnmap_parser - INFO - Starting subnet correlation for scan 1
+backend-1   | 2026-04-01TX:X:X::X.144894533Z 2026-04-01 X:X:X::X,144 - app.parsers.gnmap_parser - INFO - Correlated 0 hosts to subnets
+backend-1   | 2026-04-01TX:X:X::X.144918982Z 2026-04-01 X:X:X::X,144 - app.parsers.gnmap_parser - INFO - Completed parsing masscan_discovery_US_VM.txt: 0/0 hosts processed
+backend-1   | 2026-04-01TX:X:X::X.145031954Z 2026-04-01 X:X:X::X,144 - app.parsers.gnmap_parser - INFO - Successfully parsed masscan_discovery_US_VM.txt in 0.02 seconds
+backend-1   | 2026-04-01TX:X:X::X.147161085Z 2026-04-01 X:X:X::X,147 - app.services.ingestion_service - INFO - Job 1: parser GnmapParser succeeded in 0.02s
+backend-1   | 2026-04-01TX:X:X::X.186599232Z INFO:     X.X.X.X:49074 - "GET /api/v1/upload/jobs/1 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.276973720Z INFO:     X.X.X.X:49092 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.278310519Z INFO:     X.X.X.X:49090 - "GET /api/v1/scans/?skip=0&limit=100 HTTP/1.1" 200 OK
+frontend-1  | 2026-04-01TX:X:X::X.186854012Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs/1 HTTP/2.0" 200 411 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.277241252Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 413 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.278528706Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scans/?skip=0&limit=100 HTTP/2.0" 200 375 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.245769326Z 2026/04/01 X:X:X::X [warn] 23#23: *60 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: X.X.X.X, server: _, request: "POST /api/v1/upload/ HTTP/2.0", host: "X.X.X.X", referrer: "https://X.X.X.X/scans"
+frontend-1  | 2026-04-01TX:X:X::X.324606929Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/upload/ HTTP/2.0" 200 158 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.428955899Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs/2 HTTP/2.0" 200 411 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.355629586Z INFO:     127.0.0.1:37744 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.322499067Z 2026-04-01 X:X:X::X,322 - app.services.ingestion_service - INFO - Queued ingestion job 2 for masscan_discovery_UK_VM.txt (112404 bytes)
+backend-1   | 2026-04-01TX:X:X::X.323705900Z INFO:     X.X.X.X:52548 - "POST /api/v1/upload/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.327348042Z 2026-04-01 X:X:X::X,327 - app.services.ingestion_service - INFO - Job 2: attempting parser GnmapParser for masscan_discovery_UK_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.327462162Z 2026-04-01 X:X:X::X,327 - app.parsers.gnmap_parser - INFO - Starting parse of .gnmap file masscan_discovery_UK_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.327593062Z 2026-04-01 X:X:X::X,327 - app.parsers.gnmap_parser - INFO - Loaded .gnmap file masscan_discovery_UK_VM.txt
+backend-1   | 2026-04-01TX:X:X::X.327632691Z 2026-04-01 X:X:X::X,327 - app.parsers.gnmap_parser - INFO - Creating scan record for masscan_discovery_UK_VM.txt
+frontend-1  | 2026-04-01TX:X:X::X.517070534Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 825 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.519993480Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scans/?skip=0&limit=100 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.328671290Z 2026-04-01 X:X:X::X,328 - app.parsers.gnmap_parser - INFO - Saving initial scan record to database
+backend-1   | 2026-04-01TX:X:X::X.330440225Z 2026-04-01 X:X:X::X,330 - app.parsers.gnmap_parser - INFO - Found 0 hosts to parse
+backend-1   | 2026-04-01TX:X:X::X.330468289Z 2026-04-01 X:X:X::X,330 - app.parsers.gnmap_parser - INFO - Starting subnet correlation for scan 2
+backend-1   | 2026-04-01TX:X:X::X.400560166Z 2026-04-01 X:X:X::X,400 - app.parsers.gnmap_parser - INFO - Correlated 0 hosts to subnets
+backend-1   | 2026-04-01TX:X:X::X.400583945Z 2026-04-01 X:X:X::X,400 - app.parsers.gnmap_parser - INFO - Completed parsing masscan_discovery_UK_VM.txt: 0/0 hosts processed
+backend-1   | 2026-04-01TX:X:X::X.400606604Z 2026-04-01 X:X:X::X,400 - app.parsers.gnmap_parser - INFO - Successfully parsed masscan_discovery_UK_VM.txt in 0.07 seconds
+backend-1   | 2026-04-01TX:X:X::X.402120379Z 2026-04-01 X:X:X::X,402 - app.services.ingestion_service - INFO - Job 2: parser GnmapParser succeeded in 0.07s
+backend-1   | 2026-04-01TX:X:X::X.428697562Z INFO:     X.X.X.X:52560 - "GET /api/v1/upload/jobs/2 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.516799090Z INFO:     X.X.X.X:52578 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.519766168Z INFO:     X.X.X.X:52568 - "GET /api/v1/scans/?skip=0&limit=100 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.348602116Z INFO:     X.X.X.X:56442 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.740753977Z INFO:     X.X.X.X:56448 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.639957746Z 2026-04-01 X:X:X::X,639 - app.services.ingestion_service - INFO - Queued ingestion job 3 for all_subnets_from_CO_office_INC.xml (24189751 bytes)
+backend-1   | 2026-04-01TX:X:X::X.641534932Z INFO:     X.X.X.X:56452 - "POST /api/v1/upload/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.644690814Z 2026-04-01 X:X:X::X,644 - app.services.ingestion_service - INFO - Job 3: attempting parser NmapXMLParser for all_subnets_from_CO_office_INC.xml
+backend-1   | 2026-04-01TX:X:X::X.644729659Z 2026-04-01 X:X:X::X,644 - app.parsers.nmap_parser - INFO - Starting streamed parse of all_subnets_from_CO_office_INC.xml
+backend-1   | 2026-04-01TX:X:X::X.649915561Z 2026-04-01 X:X:X::X,649 - app.parsers.nmap_parser - INFO - Processed 100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.652150525Z 2026-04-01 X:X:X::X,651 - app.parsers.nmap_parser - INFO - Processed 200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.655205905Z 2026-04-01 X:X:X::X,655 - app.parsers.nmap_parser - INFO - Processed 300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.657304147Z 2026-04-01 X:X:X::X,657 - app.parsers.nmap_parser - INFO - Processed 400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.660449764Z 2026-04-01 X:X:X::X,660 - app.parsers.nmap_parser - INFO - Processed 500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.662387126Z 2026-04-01 X:X:X::X,662 - app.parsers.nmap_parser - INFO - Processed 600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.664573023Z 2026-04-01 X:X:X::X,664 - app.parsers.nmap_parser - INFO - Processed 700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.667663311Z 2026-04-01 X:X:X::X,667 - app.parsers.nmap_parser - INFO - Processed 800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.669598845Z 2026-04-01 X:X:X::X,669 - app.parsers.nmap_parser - INFO - Processed 900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.671770583Z 2026-04-01 X:X:X::X,671 - app.parsers.nmap_parser - INFO - Processed 1000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.674874386Z 2026-04-01 X:X:X::X,674 - app.parsers.nmap_parser - INFO - Processed 1100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.676943843Z 2026-04-01 X:X:X::X,676 - app.parsers.nmap_parser - INFO - Processed 1200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.679042455Z 2026-04-01 X:X:X::X,678 - app.parsers.nmap_parser - INFO - Processed 1300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.682076275Z 2026-04-01 X:X:X::X,682 - app.parsers.nmap_parser - INFO - Processed 1400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.684187334Z 2026-04-01 X:X:X::X,684 - app.parsers.nmap_parser - INFO - Processed 1500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.687141424Z 2026-04-01 X:X:X::X,687 - app.parsers.nmap_parser - INFO - Processed 1600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.689079636Z 2026-04-01 X:X:X::X,689 - app.parsers.nmap_parser - INFO - Processed 1700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.691281085Z 2026-04-01 X:X:X::X,691 - app.parsers.nmap_parser - INFO - Processed 1800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.105889587Z 2026-04-01 X:X:X::X,105 - app.parsers.nmap_parser - INFO - Processed 1900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.108142227Z 2026-04-01 X:X:X::X,107 - app.parsers.nmap_parser - INFO - Processed 2000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.111343687Z 2026-04-01 X:X:X::X,111 - app.parsers.nmap_parser - INFO - Processed 2100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.113303432Z 2026-04-01 X:X:X::X,113 - app.parsers.nmap_parser - INFO - Processed 2200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.115431027Z 2026-04-01 X:X:X::X,115 - app.parsers.nmap_parser - INFO - Processed 2300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.118721153Z 2026-04-01 X:X:X::X,118 - app.parsers.nmap_parser - INFO - Processed 2400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.120737800Z 2026-04-01 X:X:X::X,120 - app.parsers.nmap_parser - INFO - Processed 2500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.122968212Z 2026-04-01 X:X:X::X,122 - app.parsers.nmap_parser - INFO - Processed 2600 hosts so far
+frontend-1  | 2026-04-01TX:X:X::X.324628357Z 2026/04/01 X:X:X::X [warn] 23#23: *60 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000003, client: X.X.X.X, server: _, request: "POST /api/v1/upload/ HTTP/2.0", host: "X.X.X.X", referrer: "https://X.X.X.X/scans"
+frontend-1  | 2026-04-01TX:X:X::X.536221785Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.348881000Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 825 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.741061692Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.646001749Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/upload/ HTTP/2.0" 200 165 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.164685786Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs/3 HTTP/2.0" 200 372 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.741476976Z 2026/04/01 X:X:X::X [warn] 23#23: *60 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000004, client: X.X.X.X, server: _, request: "POST /api/v1/upload/ HTTP/2.0", host: "X.X.X.X", referrer: "https://X.X.X.X/scans"
+frontend-1  | 2026-04-01TX:X:X::X.785623011Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs/3 HTTP/2.0" 200 662 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.562004726Z 2026/04/01 X:X:X::X [warn] 23#23: *60 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000005, client: X.X.X.X, server: _, request: "POST /api/v1/upload/ HTTP/2.0", host: "X.X.X.X", referrer: "https://X.X.X.X/scans"
+frontend-1  | 2026-04-01TX:X:X::X.230174256Z 2026/04/01 X:X:X::X [warn] 23#23: *60 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000006, client: X.X.X.X, server: _, request: "POST /api/v1/upload/ HTTP/2.0", host: "X.X.X.X", referrer: "https://X.X.X.X/scans"
+frontend-1  | 2026-04-01TX:X:X::X.275733536Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/upload/ HTTP/2.0" 200 164 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.138661841Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs/3 HTTP/2.0" 200 662 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.212405576Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 556 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.788100375Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=6 HTTP/2.0" 200 561 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.793131794Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/risk-insights HTTP/2.0" 200 890 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.826221839Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/stats HTTP/2.0" 200 834 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.596116582Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.858033076Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/upload/ HTTP/2.0" 200 202 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.303139160Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 655 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.126886144Z 2026-04-01 X:X:X::X,126 - app.parsers.nmap_parser - INFO - Processed 2700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.129035250Z 2026-04-01 X:X:X::X,128 - app.parsers.nmap_parser - INFO - Processed 2800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.131131414Z 2026-04-01 X:X:X::X,131 - app.parsers.nmap_parser - INFO - Processed 2900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.134188097Z 2026-04-01 X:X:X::X,134 - app.parsers.nmap_parser - INFO - Processed 3000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.136337296Z 2026-04-01 X:X:X::X,136 - app.parsers.nmap_parser - INFO - Processed 3100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.138513574Z 2026-04-01 X:X:X::X,138 - app.parsers.nmap_parser - INFO - Processed 3200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.141541766Z 2026-04-01 X:X:X::X,141 - app.parsers.nmap_parser - INFO - Processed 3300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.143680245Z 2026-04-01 X:X:X::X,143 - app.parsers.nmap_parser - INFO - Processed 3400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.148925908Z 2026-04-01 X:X:X::X,148 - app.parsers.nmap_parser - INFO - Processed 3500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.150940223Z 2026-04-01 X:X:X::X,150 - app.parsers.nmap_parser - INFO - Processed 3600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.153121475Z 2026-04-01 X:X:X::X,153 - app.parsers.nmap_parser - INFO - Processed 3700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.158422040Z 2026-04-01 X:X:X::X,158 - app.parsers.nmap_parser - INFO - Processed 3800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.160627631Z 2026-04-01 X:X:X::X,160 - app.parsers.nmap_parser - INFO - Processed 3900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.162593654Z 2026-04-01 X:X:X::X,162 - app.parsers.nmap_parser - INFO - Processed 4000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.164385751Z INFO:     X.X.X.X:56456 - "GET /api/v1/upload/jobs/3 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.167330868Z 2026-04-01 X:X:X::X,167 - app.parsers.nmap_parser - INFO - Processed 4100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.421363006Z INFO:     127.0.0.1:46092 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.118556721Z 2026-04-01 X:X:X::X,118 - app.parsers.nmap_parser - INFO - Processed 4200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.579407195Z 2026-04-01 X:X:X::X,579 - app.parsers.nmap_parser - INFO - Processed 4300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.581672469Z 2026-04-01 X:X:X::X,581 - app.parsers.nmap_parser - INFO - Processed 4400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.584813177Z 2026-04-01 X:X:X::X,584 - app.parsers.nmap_parser - INFO - Processed 4500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.588288998Z 2026-04-01 X:X:X::X,588 - app.parsers.nmap_parser - INFO - Processed 4600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.590615384Z 2026-04-01 X:X:X::X,590 - app.parsers.nmap_parser - INFO - Processed 4700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.593134142Z 2026-04-01 X:X:X::X,593 - app.parsers.nmap_parser - INFO - Processed 4800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.596560628Z 2026-04-01 X:X:X::X,596 - app.parsers.nmap_parser - INFO - Processed 4900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.599000551Z 2026-04-01 X:X:X::X,598 - app.parsers.nmap_parser - INFO - Processed 5000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.601397936Z 2026-04-01 X:X:X::X,601 - app.parsers.nmap_parser - INFO - Processed 5100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.604802078Z 2026-04-01 X:X:X::X,604 - app.parsers.nmap_parser - INFO - Processed 5200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.607260172Z 2026-04-01 X:X:X::X,607 - app.parsers.nmap_parser - INFO - Processed 5300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.610744931Z 2026-04-01 X:X:X::X,610 - app.parsers.nmap_parser - INFO - Processed 5400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.613020121Z 2026-04-01 X:X:X::X,612 - app.parsers.nmap_parser - INFO - Processed 5500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.615488502Z 2026-04-01 X:X:X::X,615 - app.parsers.nmap_parser - INFO - Processed 5600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.619043669Z 2026-04-01 X:X:X::X,618 - app.parsers.nmap_parser - INFO - Processed 5700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.621334557Z 2026-04-01 X:X:X::X,621 - app.parsers.nmap_parser - INFO - Processed 5800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.624423487Z 2026-04-01 X:X:X::X,624 - app.parsers.nmap_parser - INFO - Processed 5900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.627869630Z 2026-04-01 X:X:X::X,627 - app.parsers.nmap_parser - INFO - Processed 6000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.630360786Z 2026-04-01 X:X:X::X,630 - app.parsers.nmap_parser - INFO - Processed 6100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.632766878Z 2026-04-01 X:X:X::X,632 - app.parsers.nmap_parser - INFO - Processed 6200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.636169450Z 2026-04-01 X:X:X::X,636 - app.parsers.nmap_parser - INFO - Processed 6300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.638637886Z 2026-04-01 X:X:X::X,638 - app.parsers.nmap_parser - INFO - Processed 6400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.642085273Z 2026-04-01 X:X:X::X,642 - app.parsers.nmap_parser - INFO - Processed 6500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.644436674Z 2026-04-01 X:X:X::X,644 - app.parsers.nmap_parser - INFO - Processed 6600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.646888450Z 2026-04-01 X:X:X::X,646 - app.parsers.nmap_parser - INFO - Processed 6700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.650405663Z 2026-04-01 X:X:X::X,650 - app.parsers.nmap_parser - INFO - Processed 6800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.652685495Z 2026-04-01 X:X:X::X,652 - app.parsers.nmap_parser - INFO - Processed 6900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.655193142Z 2026-04-01 X:X:X::X,655 - app.parsers.nmap_parser - INFO - Processed 7000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.658593730Z 2026-04-01 X:X:X::X,658 - app.parsers.nmap_parser - INFO - Processed 7100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.661603092Z 2026-04-01 X:X:X::X,661 - app.parsers.nmap_parser - INFO - Processed 7200 hosts so far
+frontend-1  | 2026-04-01TX:X:X::X.307188863Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scans/?skip=0&limit=100 HTTP/2.0" 200 371 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.158361465Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "POST /api/v1/upload/ HTTP/2.0" 200 166 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.663995351Z 2026-04-01 X:X:X::X,663 - app.parsers.nmap_parser - INFO - Processed 7300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.667537196Z 2026-04-01 X:X:X::X,667 - app.parsers.nmap_parser - INFO - Processed 7400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.670010107Z 2026-04-01 X:X:X::X,669 - app.parsers.nmap_parser - INFO - Processed 7500 hosts so far
+frontend-1  | 2026-04-01TX:X:X::X.410515999Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 715 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.547707613Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.675601286Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.842768509Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.660177973Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.957233101Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.133808027Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.480015073Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.245377921Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.362191352Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.471673547Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.620367938Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.724091227Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.736787661Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.864538984Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.031687639Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.672450323Z 2026-04-01 X:X:X::X,672 - app.parsers.nmap_parser - INFO - Processed 7600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.675841250Z 2026-04-01 X:X:X::X,675 - app.parsers.nmap_parser - INFO - Processed 7700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.678262344Z 2026-04-01 X:X:X::X,678 - app.parsers.nmap_parser - INFO - Processed 7800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.681756277Z 2026-04-01 X:X:X::X,681 - app.parsers.nmap_parser - INFO - Processed 7900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.684034301Z 2026-04-01 X:X:X::X,683 - app.parsers.nmap_parser - INFO - Processed 8000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.686531767Z 2026-04-01 X:X:X::X,686 - app.parsers.nmap_parser - INFO - Processed 8100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.689959667Z 2026-04-01 X:X:X::X,689 - app.parsers.nmap_parser - INFO - Processed 8200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.692351664Z 2026-04-01 X:X:X::X,692 - app.parsers.nmap_parser - INFO - Processed 8300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.694795642Z 2026-04-01 X:X:X::X,694 - app.parsers.nmap_parser - INFO - Processed 8400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.698779016Z 2026-04-01 X:X:X::X,698 - app.parsers.nmap_parser - INFO - Processed 8500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.701278825Z 2026-04-01 X:X:X::X,701 - app.parsers.nmap_parser - INFO - Processed 8600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.703725886Z 2026-04-01 X:X:X::X,703 - app.parsers.nmap_parser - INFO - Processed 8700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.707109008Z 2026-04-01 X:X:X::X,707 - app.parsers.nmap_parser - INFO - Processed 8800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.709554217Z 2026-04-01 X:X:X::X,709 - app.parsers.nmap_parser - INFO - Processed 8900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.713064476Z 2026-04-01 X:X:X::X,712 - app.parsers.nmap_parser - INFO - Processed 9000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.715404123Z 2026-04-01 X:X:X::X,715 - app.parsers.nmap_parser - INFO - Processed 9100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.717940047Z 2026-04-01 X:X:X::X,717 - app.parsers.nmap_parser - INFO - Processed 9200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.721432860Z 2026-04-01 X:X:X::X,721 - app.parsers.nmap_parser - INFO - Processed 9300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.723746119Z 2026-04-01 X:X:X::X,723 - app.parsers.nmap_parser - INFO - Processed 9400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.726233422Z 2026-04-01 X:X:X::X,726 - app.parsers.nmap_parser - INFO - Processed 9500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.729758642Z 2026-04-01 X:X:X::X,729 - app.parsers.nmap_parser - INFO - Processed 9600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.732183038Z 2026-04-01 X:X:X::X,732 - app.parsers.nmap_parser - INFO - Processed 9700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.735189850Z 2026-04-01 X:X:X::X,735 - app.parsers.nmap_parser - INFO - Processed 9800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.738594346Z 2026-04-01 X:X:X::X,738 - app.parsers.nmap_parser - INFO - Processed 9900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.740985890Z 2026-04-01 X:X:X::X,740 - app.parsers.nmap_parser - INFO - Processed 10000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.744486900Z 2026-04-01 X:X:X::X,744 - app.parsers.nmap_parser - INFO - Processed 10100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.746801063Z 2026-04-01 X:X:X::X,746 - app.parsers.nmap_parser - INFO - Processed 10200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.749270673Z 2026-04-01 X:X:X::X,749 - app.parsers.nmap_parser - INFO - Processed 10300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.752691039Z 2026-04-01 X:X:X::X,752 - app.parsers.nmap_parser - INFO - Processed 10400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.755011845Z 2026-04-01 X:X:X::X,754 - app.parsers.nmap_parser - INFO - Processed 10500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.757509466Z 2026-04-01 X:X:X::X,757 - app.parsers.nmap_parser - INFO - Processed 10600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.760937855Z 2026-04-01 X:X:X::X,760 - app.parsers.nmap_parser - INFO - Processed 10700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.763383820Z 2026-04-01 X:X:X::X,763 - app.parsers.nmap_parser - INFO - Processed 10800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.765792782Z 2026-04-01 X:X:X::X,765 - app.parsers.nmap_parser - INFO - Processed 10900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.769372814Z 2026-04-01 X:X:X::X,769 - app.parsers.nmap_parser - INFO - Processed 11000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.771838180Z 2026-04-01 X:X:X::X,771 - app.parsers.nmap_parser - INFO - Processed 11100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.775892499Z 2026-04-01 X:X:X::X,775 - app.parsers.nmap_parser - INFO - Processed 11200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.778184781Z 2026-04-01 X:X:X::X,778 - app.parsers.nmap_parser - INFO - Processed 11300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.780632811Z 2026-04-01 X:X:X::X,780 - app.parsers.nmap_parser - INFO - Processed 11400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.784118535Z 2026-04-01 X:X:X::X,784 - app.parsers.nmap_parser - INFO - Processed 11500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.786402473Z 2026-04-01 X:X:X::X,786 - app.parsers.nmap_parser - INFO - Processed 11600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.788900615Z 2026-04-01 X:X:X::X,788 - app.parsers.nmap_parser - INFO - Processed 11700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.792342812Z 2026-04-01 X:X:X::X,792 - app.parsers.nmap_parser - INFO - Processed 11800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.794772894Z 2026-04-01 X:X:X::X,794 - app.parsers.nmap_parser - INFO - Processed 11900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.797164516Z 2026-04-01 X:X:X::X,797 - app.parsers.nmap_parser - INFO - Processed 12000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.800584156Z 2026-04-01 X:X:X::X,800 - app.parsers.nmap_parser - INFO - Processed 12100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.803053610Z 2026-04-01 X:X:X::X,802 - app.parsers.nmap_parser - INFO - Processed 12200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.806534485Z 2026-04-01 X:X:X::X,806 - app.parsers.nmap_parser - INFO - Processed 12300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.808834636Z 2026-04-01 X:X:X::X,808 - app.parsers.nmap_parser - INFO - Processed 12400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.811340674Z 2026-04-01 X:X:X::X,811 - app.parsers.nmap_parser - INFO - Processed 12500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.814821365Z 2026-04-01 X:X:X::X,814 - app.parsers.nmap_parser - INFO - Processed 12600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.817171595Z 2026-04-01 X:X:X::X,817 - app.parsers.nmap_parser - INFO - Processed 12700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.819711295Z 2026-04-01 X:X:X::X,819 - app.parsers.nmap_parser - INFO - Processed 12800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.823282836Z 2026-04-01 X:X:X::X,823 - app.parsers.nmap_parser - INFO - Processed 12900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.825712619Z 2026-04-01 X:X:X::X,825 - app.parsers.nmap_parser - INFO - Processed 13000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.828557666Z 2026-04-01 X:X:X::X,828 - app.parsers.nmap_parser - INFO - Processed 13100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.831932287Z 2026-04-01 X:X:X::X,831 - app.parsers.nmap_parser - INFO - Processed 13200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.834353925Z 2026-04-01 X:X:X::X,834 - app.parsers.nmap_parser - INFO - Processed 13300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.837863794Z 2026-04-01 X:X:X::X,837 - app.parsers.nmap_parser - INFO - Processed 13400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.840143338Z 2026-04-01 X:X:X::X,840 - app.parsers.nmap_parser - INFO - Processed 13500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.842644196Z 2026-04-01 X:X:X::X,842 - app.parsers.nmap_parser - INFO - Processed 13600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.846009167Z 2026-04-01 X:X:X::X,845 - app.parsers.nmap_parser - INFO - Processed 13700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.848452955Z 2026-04-01 X:X:X::X,848 - app.parsers.nmap_parser - INFO - Processed 13800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.851409010Z 2026-04-01 X:X:X::X,851 - app.parsers.nmap_parser - INFO - Processed 13900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.854801882Z 2026-04-01 X:X:X::X,854 - app.parsers.nmap_parser - INFO - Processed 14000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.857205713Z 2026-04-01 X:X:X::X,857 - app.parsers.nmap_parser - INFO - Processed 14100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.859645124Z 2026-04-01 X:X:X::X,859 - app.parsers.nmap_parser - INFO - Processed 14200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.863015008Z 2026-04-01 X:X:X::X,862 - app.parsers.nmap_parser - INFO - Processed 14300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.865433103Z 2026-04-01 X:X:X::X,865 - app.parsers.nmap_parser - INFO - Processed 14400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.869047010Z 2026-04-01 X:X:X::X,868 - app.parsers.nmap_parser - INFO - Processed 14500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.871363216Z 2026-04-01 X:X:X::X,871 - app.parsers.nmap_parser - INFO - Processed 14600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.873860675Z 2026-04-01 X:X:X::X,873 - app.parsers.nmap_parser - INFO - Processed 14700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.877299639Z 2026-04-01 X:X:X::X,877 - app.parsers.nmap_parser - INFO - Processed 14800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.879731051Z 2026-04-01 X:X:X::X,879 - app.parsers.nmap_parser - INFO - Processed 14900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.882079726Z 2026-04-01 X:X:X::X,882 - app.parsers.nmap_parser - INFO - Processed 15000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.886002853Z 2026-04-01 X:X:X::X,885 - app.parsers.nmap_parser - INFO - Processed 15100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.888453161Z 2026-04-01 X:X:X::X,888 - app.parsers.nmap_parser - INFO - Processed 15200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.891947413Z 2026-04-01 X:X:X::X,891 - app.parsers.nmap_parser - INFO - Processed 15300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.894228621Z 2026-04-01 X:X:X::X,894 - app.parsers.nmap_parser - INFO - Processed 15400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.896739976Z 2026-04-01 X:X:X::X,896 - app.parsers.nmap_parser - INFO - Processed 15500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.900164325Z 2026-04-01 X:X:X::X,900 - app.parsers.nmap_parser - INFO - Processed 15600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.902636617Z 2026-04-01 X:X:X::X,902 - app.parsers.nmap_parser - INFO - Processed 15700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.905032846Z 2026-04-01 X:X:X::X,904 - app.parsers.nmap_parser - INFO - Processed 15800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.908457174Z 2026-04-01 X:X:X::X,908 - app.parsers.nmap_parser - INFO - Processed 15900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.910924550Z 2026-04-01 X:X:X::X,910 - app.parsers.nmap_parser - INFO - Processed 16000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.913345238Z 2026-04-01 X:X:X::X,913 - app.parsers.nmap_parser - INFO - Processed 16100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.916712777Z 2026-04-01 X:X:X::X,916 - app.parsers.nmap_parser - INFO - Processed 16200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.919185893Z 2026-04-01 X:X:X::X,919 - app.parsers.nmap_parser - INFO - Processed 16300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.922715165Z 2026-04-01 X:X:X::X,922 - app.parsers.nmap_parser - INFO - Processed 16400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.925548190Z 2026-04-01 X:X:X::X,925 - app.parsers.nmap_parser - INFO - Processed 16500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.928065238Z 2026-04-01 X:X:X::X,927 - app.parsers.nmap_parser - INFO - Processed 16600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.931487118Z 2026-04-01 X:X:X::X,931 - app.parsers.nmap_parser - INFO - Processed 16700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.933879854Z 2026-04-01 X:X:X::X,933 - app.parsers.nmap_parser - INFO - Processed 16800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.936278693Z 2026-04-01 X:X:X::X,936 - app.parsers.nmap_parser - INFO - Processed 16900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.939680641Z 2026-04-01 X:X:X::X,939 - app.parsers.nmap_parser - INFO - Processed 17000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.942086959Z 2026-04-01 X:X:X::X,941 - app.parsers.nmap_parser - INFO - Processed 17100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.945591809Z 2026-04-01 X:X:X::X,945 - app.parsers.nmap_parser - INFO - Processed 17200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.947952330Z 2026-04-01 X:X:X::X,947 - app.parsers.nmap_parser - INFO - Processed 17300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.950447228Z 2026-04-01 X:X:X::X,950 - app.parsers.nmap_parser - INFO - Processed 17400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.953877453Z 2026-04-01 X:X:X::X,953 - app.parsers.nmap_parser - INFO - Processed 17500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.956189580Z 2026-04-01 X:X:X::X,956 - app.parsers.nmap_parser - INFO - Processed 17600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.958739339Z 2026-04-01 X:X:X::X,958 - app.parsers.nmap_parser - INFO - Processed 17700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.962153713Z 2026-04-01 X:X:X::X,962 - app.parsers.nmap_parser - INFO - Processed 17800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.964613284Z 2026-04-01 X:X:X::X,964 - app.parsers.nmap_parser - INFO - Processed 17900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.967067447Z 2026-04-01 X:X:X::X,966 - app.parsers.nmap_parser - INFO - Processed 18000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.970571121Z 2026-04-01 X:X:X::X,970 - app.parsers.nmap_parser - INFO - Processed 18100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.972994839Z 2026-04-01 X:X:X::X,972 - app.parsers.nmap_parser - INFO - Processed 18200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.976479894Z 2026-04-01 X:X:X::X,976 - app.parsers.nmap_parser - INFO - Processed 18300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.979291920Z 2026-04-01 X:X:X::X,979 - app.parsers.nmap_parser - INFO - Processed 18400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.981823192Z 2026-04-01 X:X:X::X,981 - app.parsers.nmap_parser - INFO - Processed 18500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.985288517Z 2026-04-01 X:X:X::X,985 - app.parsers.nmap_parser - INFO - Processed 18600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.987749611Z 2026-04-01 X:X:X::X,987 - app.parsers.nmap_parser - INFO - Processed 18700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.990178635Z 2026-04-01 X:X:X::X,990 - app.parsers.nmap_parser - INFO - Processed 18800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.993595826Z 2026-04-01 X:X:X::X,993 - app.parsers.nmap_parser - INFO - Processed 18900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.996089914Z 2026-04-01 X:X:X::X,995 - app.parsers.nmap_parser - INFO - Processed 19000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.999090527Z 2026-04-01 X:X:X::X,998 - app.parsers.nmap_parser - INFO - Processed 19100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.002464083Z 2026-04-01 X:X:X::X,002 - app.parsers.nmap_parser - INFO - Processed 19200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.004917099Z 2026-04-01 X:X:X::X,004 - app.parsers.nmap_parser - INFO - Processed 19300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.008410766Z 2026-04-01 X:X:X::X,008 - app.parsers.nmap_parser - INFO - Processed 19400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.010709155Z 2026-04-01 X:X:X::X,010 - app.parsers.nmap_parser - INFO - Processed 19500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.013203238Z 2026-04-01 X:X:X::X,013 - app.parsers.nmap_parser - INFO - Processed 19600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.016659477Z 2026-04-01 X:X:X::X,016 - app.parsers.nmap_parser - INFO - Processed 19700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.019078918Z 2026-04-01 X:X:X::X,018 - app.parsers.nmap_parser - INFO - Processed 19800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.021549416Z 2026-04-01 X:X:X::X,021 - app.parsers.nmap_parser - INFO - Processed 19900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.024968945Z 2026-04-01 X:X:X::X,024 - app.parsers.nmap_parser - INFO - Processed 20000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.027429767Z 2026-04-01 X:X:X::X,027 - app.parsers.nmap_parser - INFO - Processed 20100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.030913934Z 2026-04-01 X:X:X::X,030 - app.parsers.nmap_parser - INFO - Processed 20200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.033791001Z 2026-04-01 X:X:X::X,033 - app.parsers.nmap_parser - INFO - Processed 20300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.036317629Z 2026-04-01 X:X:X::X,036 - app.parsers.nmap_parser - INFO - Processed 20400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.039775094Z 2026-04-01 X:X:X::X,039 - app.parsers.nmap_parser - INFO - Processed 20500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.042047378Z 2026-04-01 X:X:X::X,041 - app.parsers.nmap_parser - INFO - Processed 20600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.044599503Z 2026-04-01 X:X:X::X,044 - app.parsers.nmap_parser - INFO - Processed 20700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.048050819Z 2026-04-01 X:X:X::X,047 - app.parsers.nmap_parser - INFO - Processed 20800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.050480765Z 2026-04-01 X:X:X::X,050 - app.parsers.nmap_parser - INFO - Processed 20900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.052927735Z 2026-04-01 X:X:X::X,052 - app.parsers.nmap_parser - INFO - Processed 21000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.056358888Z 2026-04-01 X:X:X::X,056 - app.parsers.nmap_parser - INFO - Processed 21100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.058855572Z 2026-04-01 X:X:X::X,058 - app.parsers.nmap_parser - INFO - Processed 21200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.062335921Z 2026-04-01 X:X:X::X,062 - app.parsers.nmap_parser - INFO - Processed 21300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.064616515Z 2026-04-01 X:X:X::X,064 - app.parsers.nmap_parser - INFO - Processed 21400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.067114677Z 2026-04-01 X:X:X::X,067 - app.parsers.nmap_parser - INFO - Processed 21500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.070667894Z 2026-04-01 X:X:X::X,070 - app.parsers.nmap_parser - INFO - Processed 21600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.073658276Z 2026-04-01 X:X:X::X,073 - app.parsers.nmap_parser - INFO - Processed 21700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.076024343Z 2026-04-01 X:X:X::X,075 - app.parsers.nmap_parser - INFO - Processed 21800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.079417803Z 2026-04-01 X:X:X::X,079 - app.parsers.nmap_parser - INFO - Processed 21900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.081864124Z 2026-04-01 X:X:X::X,081 - app.parsers.nmap_parser - INFO - Processed 22000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.084283438Z 2026-04-01 X:X:X::X,084 - app.parsers.nmap_parser - INFO - Processed 22100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.087616577Z 2026-04-01 X:X:X::X,087 - app.parsers.nmap_parser - INFO - Processed 22200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.090048805Z 2026-04-01 X:X:X::X,089 - app.parsers.nmap_parser - INFO - Processed 22300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.093606275Z 2026-04-01 X:X:X::X,093 - app.parsers.nmap_parser - INFO - Processed 22400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.095954508Z 2026-04-01 X:X:X::X,095 - app.parsers.nmap_parser - INFO - Processed 22500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.098545970Z 2026-04-01 X:X:X::X,098 - app.parsers.nmap_parser - INFO - Processed 22600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.102096713Z 2026-04-01 X:X:X::X,101 - app.parsers.nmap_parser - INFO - Processed 22700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.104554362Z 2026-04-01 X:X:X::X,104 - app.parsers.nmap_parser - INFO - Processed 22800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.106973816Z 2026-04-01 X:X:X::X,106 - app.parsers.nmap_parser - INFO - Processed 22900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.110893998Z 2026-04-01 X:X:X::X,110 - app.parsers.nmap_parser - INFO - Processed 23000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.113339460Z 2026-04-01 X:X:X::X,113 - app.parsers.nmap_parser - INFO - Processed 23100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.116855280Z 2026-04-01 X:X:X::X,116 - app.parsers.nmap_parser - INFO - Processed 23200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.119178573Z 2026-04-01 X:X:X::X,119 - app.parsers.nmap_parser - INFO - Processed 23300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.121672447Z 2026-04-01 X:X:X::X,121 - app.parsers.nmap_parser - INFO - Processed 23400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.125206862Z 2026-04-01 X:X:X::X,125 - app.parsers.nmap_parser - INFO - Processed 23500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.127504415Z 2026-04-01 X:X:X::X,127 - app.parsers.nmap_parser - INFO - Processed 23600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.130020299Z 2026-04-01 X:X:X::X,129 - app.parsers.nmap_parser - INFO - Processed 23700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.133465012Z 2026-04-01 X:X:X::X,133 - app.parsers.nmap_parser - INFO - Processed 23800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.135971866Z 2026-04-01 X:X:X::X,135 - app.parsers.nmap_parser - INFO - Processed 23900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.138396509Z 2026-04-01 X:X:X::X,138 - app.parsers.nmap_parser - INFO - Processed 24000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.141807163Z 2026-04-01 X:X:X::X,141 - app.parsers.nmap_parser - INFO - Processed 24100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.144245857Z 2026-04-01 X:X:X::X,144 - app.parsers.nmap_parser - INFO - Processed 24200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.147757818Z 2026-04-01 X:X:X::X,147 - app.parsers.nmap_parser - INFO - Processed 24300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.150567238Z 2026-04-01 X:X:X::X,150 - app.parsers.nmap_parser - INFO - Processed 24400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.153077855Z 2026-04-01 X:X:X::X,152 - app.parsers.nmap_parser - INFO - Processed 24500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.156522846Z 2026-04-01 X:X:X::X,156 - app.parsers.nmap_parser - INFO - Processed 24600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.158821917Z 2026-04-01 X:X:X::X,158 - app.parsers.nmap_parser - INFO - Processed 24700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.161345906Z 2026-04-01 X:X:X::X,161 - app.parsers.nmap_parser - INFO - Processed 24800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.164778592Z 2026-04-01 X:X:X::X,164 - app.parsers.nmap_parser - INFO - Processed 24900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.167204017Z 2026-04-01 X:X:X::X,167 - app.parsers.nmap_parser - INFO - Processed 25000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.169622183Z 2026-04-01 X:X:X::X,169 - app.parsers.nmap_parser - INFO - Processed 25100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.173102985Z 2026-04-01 X:X:X::X,173 - app.parsers.nmap_parser - INFO - Processed 25200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.175609732Z 2026-04-01 X:X:X::X,175 - app.parsers.nmap_parser - INFO - Processed 25300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.179379470Z 2026-04-01 X:X:X::X,179 - app.parsers.nmap_parser - INFO - Processed 25400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.181451463Z 2026-04-01 X:X:X::X,181 - app.parsers.nmap_parser - INFO - Processed 25500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.184539811Z 2026-04-01 X:X:X::X,184 - app.parsers.nmap_parser - INFO - Processed 25600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.187980979Z 2026-04-01 X:X:X::X,187 - app.parsers.nmap_parser - INFO - Processed 25700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.190364786Z 2026-04-01 X:X:X::X,190 - app.parsers.nmap_parser - INFO - Processed 25800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.192838553Z 2026-04-01 X:X:X::X,192 - app.parsers.nmap_parser - INFO - Processed 25900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.196218857Z 2026-04-01 X:X:X::X,196 - app.parsers.nmap_parser - INFO - Processed 26000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.198706163Z 2026-04-01 X:X:X::X,198 - app.parsers.nmap_parser - INFO - Processed 26100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.201091274Z 2026-04-01 X:X:X::X,201 - app.parsers.nmap_parser - INFO - Processed 26200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.204442345Z 2026-04-01 X:X:X::X,204 - app.parsers.nmap_parser - INFO - Processed 26300 hosts so far
+frontend-1  | 2026-04-01TX:X:X::X.153533731Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.341197136Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.547293252Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.788086622Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.724065882Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.860045228Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.029312006Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.030150857Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.031377035Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.031721559Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.032601878Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.373945577Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.590071052Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.769827694Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.178054118Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.421355041Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.919942911Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.206895289Z 2026-04-01 X:X:X::X,206 - app.parsers.nmap_parser - INFO - Processed 26400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.210358220Z 2026-04-01 X:X:X::X,210 - app.parsers.nmap_parser - INFO - Processed 26500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.212688011Z 2026-04-01 X:X:X::X,212 - app.parsers.nmap_parser - INFO - Processed 26600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.215183032Z 2026-04-01 X:X:X::X,215 - app.parsers.nmap_parser - INFO - Processed 26700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.218600864Z 2026-04-01 X:X:X::X,218 - app.parsers.nmap_parser - INFO - Processed 26800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.221014917Z 2026-04-01 X:X:X::X,220 - app.parsers.nmap_parser - INFO - Processed 26900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.224047460Z 2026-04-01 X:X:X::X,223 - app.parsers.nmap_parser - INFO - Processed 27000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.227439665Z 2026-04-01 X:X:X::X,227 - app.parsers.nmap_parser - INFO - Processed 27100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.229897346Z 2026-04-01 X:X:X::X,229 - app.parsers.nmap_parser - INFO - Processed 27200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.233426163Z 2026-04-01 X:X:X::X,233 - app.parsers.nmap_parser - INFO - Processed 27300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.235700818Z 2026-04-01 X:X:X::X,235 - app.parsers.nmap_parser - INFO - Processed 27400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.238269500Z 2026-04-01 X:X:X::X,238 - app.parsers.nmap_parser - INFO - Processed 27500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.241715697Z 2026-04-01 X:X:X::X,241 - app.parsers.nmap_parser - INFO - Processed 27600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.244023342Z 2026-04-01 X:X:X::X,243 - app.parsers.nmap_parser - INFO - Processed 27700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.246556461Z 2026-04-01 X:X:X::X,246 - app.parsers.nmap_parser - INFO - Processed 27800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.249953841Z 2026-04-01 X:X:X::X,249 - app.parsers.nmap_parser - INFO - Processed 27900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.252391451Z 2026-04-01 X:X:X::X,252 - app.parsers.nmap_parser - INFO - Processed 28000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.254831525Z 2026-04-01 X:X:X::X,254 - app.parsers.nmap_parser - INFO - Processed 28100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.258722729Z 2026-04-01 X:X:X::X,258 - app.parsers.nmap_parser - INFO - Processed 28200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.261177850Z 2026-04-01 X:X:X::X,261 - app.parsers.nmap_parser - INFO - Processed 28300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.264745605Z 2026-04-01 X:X:X::X,264 - app.parsers.nmap_parser - INFO - Processed 28400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.267066865Z 2026-04-01 X:X:X::X,266 - app.parsers.nmap_parser - INFO - Processed 28500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.269560043Z 2026-04-01 X:X:X::X,269 - app.parsers.nmap_parser - INFO - Processed 28600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.273108316Z 2026-04-01 X:X:X::X,273 - app.parsers.nmap_parser - INFO - Processed 28700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.275588654Z 2026-04-01 X:X:X::X,275 - app.parsers.nmap_parser - INFO - Processed 28800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.277970536Z 2026-04-01 X:X:X::X,277 - app.parsers.nmap_parser - INFO - Processed 28900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.281366389Z 2026-04-01 X:X:X::X,281 - app.parsers.nmap_parser - INFO - Processed 29000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.283863556Z 2026-04-01 X:X:X::X,283 - app.parsers.nmap_parser - INFO - Processed 29100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.286272194Z 2026-04-01 X:X:X::X,286 - app.parsers.nmap_parser - INFO - Processed 29200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.289663474Z 2026-04-01 X:X:X::X,289 - app.parsers.nmap_parser - INFO - Processed 29300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.292111330Z 2026-04-01 X:X:X::X,291 - app.parsers.nmap_parser - INFO - Processed 29400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.295608603Z 2026-04-01 X:X:X::X,295 - app.parsers.nmap_parser - INFO - Processed 29500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.298501841Z 2026-04-01 X:X:X::X,298 - app.parsers.nmap_parser - INFO - Processed 29600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.301061046Z 2026-04-01 X:X:X::X,300 - app.parsers.nmap_parser - INFO - Processed 29700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.304532961Z 2026-04-01 X:X:X::X,304 - app.parsers.nmap_parser - INFO - Processed 29800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.306995641Z 2026-04-01 X:X:X::X,306 - app.parsers.nmap_parser - INFO - Processed 29900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.309416632Z 2026-04-01 X:X:X::X,309 - app.parsers.nmap_parser - INFO - Processed 30000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.313025787Z 2026-04-01 X:X:X::X,312 - app.parsers.nmap_parser - INFO - Processed 30100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.315604708Z 2026-04-01 X:X:X::X,315 - app.parsers.nmap_parser - INFO - Processed 30200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.318073674Z 2026-04-01 X:X:X::X,318 - app.parsers.nmap_parser - INFO - Processed 30300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.321476395Z 2026-04-01 X:X:X::X,321 - app.parsers.nmap_parser - INFO - Processed 30400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.323967107Z 2026-04-01 X:X:X::X,323 - app.parsers.nmap_parser - INFO - Processed 30500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.327533366Z 2026-04-01 X:X:X::X,327 - app.parsers.nmap_parser - INFO - Processed 30600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.329837595Z 2026-04-01 X:X:X::X,329 - app.parsers.nmap_parser - INFO - Processed 30700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.332366796Z 2026-04-01 X:X:X::X,332 - app.parsers.nmap_parser - INFO - Processed 30800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.336398002Z 2026-04-01 X:X:X::X,336 - app.parsers.nmap_parser - INFO - Processed 30900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.338851942Z 2026-04-01 X:X:X::X,338 - app.parsers.nmap_parser - INFO - Processed 31000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.341275692Z 2026-04-01 X:X:X::X,341 - app.parsers.nmap_parser - INFO - Processed 31100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.344711682Z 2026-04-01 X:X:X::X,344 - app.parsers.nmap_parser - INFO - Processed 31200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.347135451Z 2026-04-01 X:X:X::X,347 - app.parsers.nmap_parser - INFO - Processed 31300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.350641971Z 2026-04-01 X:X:X::X,350 - app.parsers.nmap_parser - INFO - Processed 31400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.352938149Z 2026-04-01 X:X:X::X,352 - app.parsers.nmap_parser - INFO - Processed 31500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.355381423Z 2026-04-01 X:X:X::X,355 - app.parsers.nmap_parser - INFO - Processed 31600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.358904888Z 2026-04-01 X:X:X::X,358 - app.parsers.nmap_parser - INFO - Processed 31700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.361224026Z 2026-04-01 X:X:X::X,361 - app.parsers.nmap_parser - INFO - Processed 31800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.363768910Z 2026-04-01 X:X:X::X,363 - app.parsers.nmap_parser - INFO - Processed 31900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.367230962Z 2026-04-01 X:X:X::X,367 - app.parsers.nmap_parser - INFO - Processed 32000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.369745018Z 2026-04-01 X:X:X::X,369 - app.parsers.nmap_parser - INFO - Processed 32100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.372190547Z 2026-04-01 X:X:X::X,372 - app.parsers.nmap_parser - INFO - Processed 32200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.375459636Z 2026-04-01 X:X:X::X,375 - app.parsers.nmap_parser - INFO - Processed 32300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.377574936Z 2026-04-01 X:X:X::X,377 - app.parsers.nmap_parser - INFO - Processed 32400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.380746489Z 2026-04-01 X:X:X::X,380 - app.parsers.nmap_parser - INFO - Processed 32500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.382721140Z 2026-04-01 X:X:X::X,382 - app.parsers.nmap_parser - INFO - Processed 32600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.384910225Z 2026-04-01 X:X:X::X,384 - app.parsers.nmap_parser - INFO - Processed 32700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.388023185Z 2026-04-01 X:X:X::X,387 - app.parsers.nmap_parser - INFO - Processed 32800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.389960072Z 2026-04-01 X:X:X::X,389 - app.parsers.nmap_parser - INFO - Processed 32900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.392214548Z 2026-04-01 X:X:X::X,392 - app.parsers.nmap_parser - INFO - Processed 33000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.395331742Z 2026-04-01 X:X:X::X,395 - app.parsers.nmap_parser - INFO - Processed 33100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.397439668Z 2026-04-01 X:X:X::X,397 - app.parsers.nmap_parser - INFO - Processed 33200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.399558114Z 2026-04-01 X:X:X::X,399 - app.parsers.nmap_parser - INFO - Processed 33300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.402596480Z 2026-04-01 X:X:X::X,402 - app.parsers.nmap_parser - INFO - Processed 33400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.404704088Z 2026-04-01 X:X:X::X,404 - app.parsers.nmap_parser - INFO - Processed 33500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.408164582Z 2026-04-01 X:X:X::X,407 - app.parsers.nmap_parser - INFO - Processed 33600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.409822042Z 2026-04-01 X:X:X::X,409 - app.parsers.nmap_parser - INFO - Processed 33700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.412035233Z 2026-04-01 X:X:X::X,411 - app.parsers.nmap_parser - INFO - Processed 33800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.415169543Z 2026-04-01 X:X:X::X,415 - app.parsers.nmap_parser - INFO - Processed 33900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.417098491Z 2026-04-01 X:X:X::X,417 - app.parsers.nmap_parser - INFO - Processed 34000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.419295750Z 2026-04-01 X:X:X::X,419 - app.parsers.nmap_parser - INFO - Processed 34100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.422370222Z 2026-04-01 X:X:X::X,422 - app.parsers.nmap_parser - INFO - Processed 34200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.424516603Z 2026-04-01 X:X:X::X,424 - app.parsers.nmap_parser - INFO - Processed 34300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.426640140Z 2026-04-01 X:X:X::X,426 - app.parsers.nmap_parser - INFO - Processed 34400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.429659888Z 2026-04-01 X:X:X::X,429 - app.parsers.nmap_parser - INFO - Processed 34500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.431795000Z 2026-04-01 X:X:X::X,431 - app.parsers.nmap_parser - INFO - Processed 34600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.434940269Z 2026-04-01 X:X:X::X,434 - app.parsers.nmap_parser - INFO - Processed 34700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.436977344Z 2026-04-01 X:X:X::X,436 - app.parsers.nmap_parser - INFO - Processed 34800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.439210497Z 2026-04-01 X:X:X::X,439 - app.parsers.nmap_parser - INFO - Processed 34900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.442264502Z 2026-04-01 X:X:X::X,442 - app.parsers.nmap_parser - INFO - Processed 35000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.444372389Z 2026-04-01 X:X:X::X,444 - app.parsers.nmap_parser - INFO - Processed 35100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.446441700Z 2026-04-01 X:X:X::X,446 - app.parsers.nmap_parser - INFO - Processed 35200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.449539465Z 2026-04-01 X:X:X::X,449 - app.parsers.nmap_parser - INFO - Processed 35300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.451621373Z 2026-04-01 X:X:X::X,451 - app.parsers.nmap_parser - INFO - Processed 35400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.453700436Z 2026-04-01 X:X:X::X,453 - app.parsers.nmap_parser - INFO - Processed 35500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.456743894Z 2026-04-01 X:X:X::X,456 - app.parsers.nmap_parser - INFO - Processed 35600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.458888519Z 2026-04-01 X:X:X::X,458 - app.parsers.nmap_parser - INFO - Processed 35700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.462020676Z 2026-04-01 X:X:X::X,461 - app.parsers.nmap_parser - INFO - Processed 35800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.463971901Z 2026-04-01 X:X:X::X,463 - app.parsers.nmap_parser - INFO - Processed 35900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.466137328Z 2026-04-01 X:X:X::X,466 - app.parsers.nmap_parser - INFO - Processed 36000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.469254831Z 2026-04-01 X:X:X::X,469 - app.parsers.nmap_parser - INFO - Processed 36100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.471357724Z 2026-04-01 X:X:X::X,471 - app.parsers.nmap_parser - INFO - Processed 36200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.473410484Z 2026-04-01 X:X:X::X,473 - app.parsers.nmap_parser - INFO - Processed 36300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.477098120Z 2026-04-01 X:X:X::X,476 - app.parsers.nmap_parser - INFO - Processed 36400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.479606914Z 2026-04-01 X:X:X::X,479 - app.parsers.nmap_parser - INFO - Processed 36500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.483664326Z 2026-04-01 X:X:X::X,483 - app.parsers.nmap_parser - INFO - Processed 36600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.485986634Z 2026-04-01 X:X:X::X,485 - app.parsers.nmap_parser - INFO - Processed 36700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.488465030Z 2026-04-01 X:X:X::X,488 - app.parsers.nmap_parser - INFO - Processed 36800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.491958882Z 2026-04-01 X:X:X::X,491 - app.parsers.nmap_parser - INFO - Processed 36900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.494234725Z 2026-04-01 X:X:X::X,494 - app.parsers.nmap_parser - INFO - Processed 37000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.496742288Z 2026-04-01 X:X:X::X,496 - app.parsers.nmap_parser - INFO - Processed 37100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.500245753Z 2026-04-01 X:X:X::X,500 - app.parsers.nmap_parser - INFO - Processed 37200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.502980832Z 2026-04-01 X:X:X::X,502 - app.parsers.nmap_parser - INFO - Processed 37300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.505690526Z 2026-04-01 X:X:X::X,505 - app.parsers.nmap_parser - INFO - Processed 37400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.509219947Z 2026-04-01 X:X:X::X,509 - app.parsers.nmap_parser - INFO - Processed 37500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.511656120Z 2026-04-01 X:X:X::X,511 - app.parsers.nmap_parser - INFO - Processed 37600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.516541601Z 2026-04-01 X:X:X::X,516 - app.parsers.nmap_parser - INFO - Processed 37700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.520033483Z 2026-04-01 X:X:X::X,519 - app.parsers.nmap_parser - INFO - Processed 37800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.523186328Z 2026-04-01 X:X:X::X,523 - app.parsers.nmap_parser - INFO - Processed 37900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.526726852Z 2026-04-01 X:X:X::X,526 - app.parsers.nmap_parser - INFO - Processed 38000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.529225601Z 2026-04-01 X:X:X::X,529 - app.parsers.nmap_parser - INFO - Processed 38100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.531643061Z 2026-04-01 X:X:X::X,531 - app.parsers.nmap_parser - INFO - Processed 38200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.535086976Z 2026-04-01 X:X:X::X,534 - app.parsers.nmap_parser - INFO - Processed 38300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.537654717Z 2026-04-01 X:X:X::X,537 - app.parsers.nmap_parser - INFO - Processed 38400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.540041124Z 2026-04-01 X:X:X::X,539 - app.parsers.nmap_parser - INFO - Processed 38500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.543432346Z 2026-04-01 X:X:X::X,543 - app.parsers.nmap_parser - INFO - Processed 38600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.545874155Z 2026-04-01 X:X:X::X,545 - app.parsers.nmap_parser - INFO - Processed 38700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.549556859Z 2026-04-01 X:X:X::X,549 - app.parsers.nmap_parser - INFO - Processed 38800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.551902990Z 2026-04-01 X:X:X::X,551 - app.parsers.nmap_parser - INFO - Processed 38900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.554407729Z 2026-04-01 X:X:X::X,554 - app.parsers.nmap_parser - INFO - Processed 39000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.558077740Z 2026-04-01 X:X:X::X,557 - app.parsers.nmap_parser - INFO - Processed 39100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.560886917Z 2026-04-01 X:X:X::X,560 - app.parsers.nmap_parser - INFO - Processed 39200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.563292484Z 2026-04-01 X:X:X::X,563 - app.parsers.nmap_parser - INFO - Processed 39300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.566708425Z 2026-04-01 X:X:X::X,566 - app.parsers.nmap_parser - INFO - Processed 39400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.569152357Z 2026-04-01 X:X:X::X,569 - app.parsers.nmap_parser - INFO - Processed 39500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.572603641Z 2026-04-01 X:X:X::X,572 - app.parsers.nmap_parser - INFO - Processed 39600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.574930432Z 2026-04-01 X:X:X::X,574 - app.parsers.nmap_parser - INFO - Processed 39700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.577489898Z 2026-04-01 X:X:X::X,577 - app.parsers.nmap_parser - INFO - Processed 39800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.580979100Z 2026-04-01 X:X:X::X,580 - app.parsers.nmap_parser - INFO - Processed 39900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.583301539Z 2026-04-01 X:X:X::X,583 - app.parsers.nmap_parser - INFO - Processed 40000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.585866934Z 2026-04-01 X:X:X::X,585 - app.parsers.nmap_parser - INFO - Processed 40100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.589283024Z 2026-04-01 X:X:X::X,589 - app.parsers.nmap_parser - INFO - Processed 40200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.591756105Z 2026-04-01 X:X:X::X,591 - app.parsers.nmap_parser - INFO - Processed 40300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.594193371Z 2026-04-01 X:X:X::X,594 - app.parsers.nmap_parser - INFO - Processed 40400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.597652822Z 2026-04-01 X:X:X::X,597 - app.parsers.nmap_parser - INFO - Processed 40500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.600676451Z 2026-04-01 X:X:X::X,600 - app.parsers.nmap_parser - INFO - Processed 40600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.604193563Z 2026-04-01 X:X:X::X,604 - app.parsers.nmap_parser - INFO - Processed 40700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.606511992Z 2026-04-01 X:X:X::X,606 - app.parsers.nmap_parser - INFO - Processed 40800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.609047330Z 2026-04-01 X:X:X::X,608 - app.parsers.nmap_parser - INFO - Processed 40900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.612468577Z 2026-04-01 X:X:X::X,612 - app.parsers.nmap_parser - INFO - Processed 41000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.615793647Z 2026-04-01 X:X:X::X,614 - app.parsers.nmap_parser - INFO - Processed 41100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.617333332Z 2026-04-01 X:X:X::X,617 - app.parsers.nmap_parser - INFO - Processed 41200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.620733964Z 2026-04-01 X:X:X::X,620 - app.parsers.nmap_parser - INFO - Processed 41300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.623221162Z 2026-04-01 X:X:X::X,623 - app.parsers.nmap_parser - INFO - Processed 41400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.626724227Z 2026-04-01 X:X:X::X,626 - app.parsers.nmap_parser - INFO - Processed 41500 hosts so far
+frontend-1  | 2026-04-01TX:X:X::X.732661019Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.907817767Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.629037095Z 2026-04-01 X:X:X::X,628 - app.parsers.nmap_parser - INFO - Processed 41600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.631559251Z 2026-04-01 X:X:X::X,631 - app.parsers.nmap_parser - INFO - Processed 41700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.635516038Z 2026-04-01 X:X:X::X,635 - app.parsers.nmap_parser - INFO - Processed 41800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.637837769Z 2026-04-01 X:X:X::X,637 - app.parsers.nmap_parser - INFO - Processed 41900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.640378133Z 2026-04-01 X:X:X::X,640 - app.parsers.nmap_parser - INFO - Processed 42000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.643886646Z 2026-04-01 X:X:X::X,643 - app.parsers.nmap_parser - INFO - Processed 42100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.646332132Z 2026-04-01 X:X:X::X,646 - app.parsers.nmap_parser - INFO - Processed 42200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.648786935Z 2026-04-01 X:X:X::X,648 - app.parsers.nmap_parser - INFO - Processed 42300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.652276605Z 2026-04-01 X:X:X::X,652 - app.parsers.nmap_parser - INFO - Processed 42400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.654730512Z 2026-04-01 X:X:X::X,654 - app.parsers.nmap_parser - INFO - Processed 42500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.658259213Z 2026-04-01 X:X:X::X,658 - app.parsers.nmap_parser - INFO - Processed 42600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.660540679Z 2026-04-01 X:X:X::X,660 - app.parsers.nmap_parser - INFO - Processed 42700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.663098763Z 2026-04-01 X:X:X::X,662 - app.parsers.nmap_parser - INFO - Processed 42800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.666500197Z 2026-04-01 X:X:X::X,666 - app.parsers.nmap_parser - INFO - Processed 42900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.668935014Z 2026-04-01 X:X:X::X,668 - app.parsers.nmap_parser - INFO - Processed 43000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.671334339Z 2026-04-01 X:X:X::X,671 - app.parsers.nmap_parser - INFO - Processed 43100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.675346615Z 2026-04-01 X:X:X::X,675 - app.parsers.nmap_parser - INFO - Processed 43200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.677940865Z 2026-04-01 X:X:X::X,677 - app.parsers.nmap_parser - INFO - Processed 43300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.681449763Z 2026-04-01 X:X:X::X,681 - app.parsers.nmap_parser - INFO - Processed 43400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.683768676Z 2026-04-01 X:X:X::X,683 - app.parsers.nmap_parser - INFO - Processed 43500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.686251423Z 2026-04-01 X:X:X::X,686 - app.parsers.nmap_parser - INFO - Processed 43600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.689697491Z 2026-04-01 X:X:X::X,689 - app.parsers.nmap_parser - INFO - Processed 43700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.692073677Z 2026-04-01 X:X:X::X,691 - app.parsers.nmap_parser - INFO - Processed 43800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.694572267Z 2026-04-01 X:X:X::X,694 - app.parsers.nmap_parser - INFO - Processed 43900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.769163788Z 2026-04-01 X:X:X::X,768 - app.parsers.nmap_parser - INFO - Processed 44000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.771670380Z 2026-04-01 X:X:X::X,771 - app.parsers.nmap_parser - INFO - Processed 44100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.774140732Z 2026-04-01 X:X:X::X,774 - app.parsers.nmap_parser - INFO - Processed 44200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.777634102Z 2026-04-01 X:X:X::X,777 - app.parsers.nmap_parser - INFO - Processed 44300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.780221229Z 2026-04-01 X:X:X::X,780 - app.parsers.nmap_parser - INFO - Processed 44400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.783747381Z 2026-04-01 X:X:X::X,783 - app.parsers.nmap_parser - INFO - Processed 44500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.786018124Z 2026-04-01 X:X:X::X,785 - app.parsers.nmap_parser - INFO - Processed 44600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.789113295Z 2026-04-01 X:X:X::X,789 - app.parsers.nmap_parser - INFO - Processed 44700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.792647924Z 2026-04-01 X:X:X::X,792 - app.parsers.nmap_parser - INFO - Processed 44800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.795147649Z 2026-04-01 X:X:X::X,795 - app.parsers.nmap_parser - INFO - Processed 44900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.797622604Z 2026-04-01 X:X:X::X,797 - app.parsers.nmap_parser - INFO - Processed 45000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.801024529Z 2026-04-01 X:X:X::X,800 - app.parsers.nmap_parser - INFO - Processed 45100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.803503750Z 2026-04-01 X:X:X::X,803 - app.parsers.nmap_parser - INFO - Processed 45200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.807004742Z 2026-04-01 X:X:X::X,806 - app.parsers.nmap_parser - INFO - Processed 45300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.809328302Z 2026-04-01 X:X:X::X,809 - app.parsers.nmap_parser - INFO - Processed 45400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.811897180Z 2026-04-01 X:X:X::X,811 - app.parsers.nmap_parser - INFO - Processed 45500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.815326603Z 2026-04-01 X:X:X::X,815 - app.parsers.nmap_parser - INFO - Processed 45600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.817793840Z 2026-04-01 X:X:X::X,817 - app.parsers.nmap_parser - INFO - Processed 45700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.820223768Z 2026-04-01 X:X:X::X,820 - app.parsers.nmap_parser - INFO - Processed 45800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.823613832Z 2026-04-01 X:X:X::X,823 - app.parsers.nmap_parser - INFO - Processed 45900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.826059158Z 2026-04-01 X:X:X::X,825 - app.parsers.nmap_parser - INFO - Processed 46000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.830208097Z 2026-04-01 X:X:X::X,830 - app.parsers.nmap_parser - INFO - Processed 46100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.832524699Z 2026-04-01 X:X:X::X,832 - app.parsers.nmap_parser - INFO - Processed 46200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.835075726Z 2026-04-01 X:X:X::X,834 - app.parsers.nmap_parser - INFO - Processed 46300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.838569677Z 2026-04-01 X:X:X::X,838 - app.parsers.nmap_parser - INFO - Processed 46400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.841040393Z 2026-04-01 X:X:X::X,840 - app.parsers.nmap_parser - INFO - Processed 46500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.843453773Z 2026-04-01 X:X:X::X,843 - app.parsers.nmap_parser - INFO - Processed 46600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.846878183Z 2026-04-01 X:X:X::X,846 - app.parsers.nmap_parser - INFO - Processed 46700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.849370932Z 2026-04-01 X:X:X::X,849 - app.parsers.nmap_parser - INFO - Processed 46800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.852962365Z 2026-04-01 X:X:X::X,852 - app.parsers.nmap_parser - INFO - Processed 46900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.855300306Z 2026-04-01 X:X:X::X,855 - app.parsers.nmap_parser - INFO - Processed 47000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.857784944Z 2026-04-01 X:X:X::X,857 - app.parsers.nmap_parser - INFO - Processed 47100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.861822748Z 2026-04-01 X:X:X::X,861 - app.parsers.nmap_parser - INFO - Processed 47200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.864161189Z 2026-04-01 X:X:X::X,864 - app.parsers.nmap_parser - INFO - Processed 47300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.866697523Z 2026-04-01 X:X:X::X,866 - app.parsers.nmap_parser - INFO - Processed 47400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.870161407Z 2026-04-01 X:X:X::X,870 - app.parsers.nmap_parser - INFO - Processed 47500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.872624031Z 2026-04-01 X:X:X::X,872 - app.parsers.nmap_parser - INFO - Processed 47600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.875115467Z 2026-04-01 X:X:X::X,875 - app.parsers.nmap_parser - INFO - Processed 47700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.878511543Z 2026-04-01 X:X:X::X,878 - app.parsers.nmap_parser - INFO - Processed 47800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.880899655Z 2026-04-01 X:X:X::X,880 - app.parsers.nmap_parser - INFO - Processed 47900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.884148206Z 2026-04-01 X:X:X::X,884 - app.parsers.nmap_parser - INFO - Processed 48000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.886145960Z 2026-04-01 X:X:X::X,886 - app.parsers.nmap_parser - INFO - Processed 48100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.888399851Z 2026-04-01 X:X:X::X,888 - app.parsers.nmap_parser - INFO - Processed 48200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.891528705Z 2026-04-01 X:X:X::X,891 - app.parsers.nmap_parser - INFO - Processed 48300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.893683712Z 2026-04-01 X:X:X::X,893 - app.parsers.nmap_parser - INFO - Processed 48400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.895821824Z 2026-04-01 X:X:X::X,895 - app.parsers.nmap_parser - INFO - Processed 48500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.898902314Z 2026-04-01 X:X:X::X,898 - app.parsers.nmap_parser - INFO - Processed 48600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.901051595Z 2026-04-01 X:X:X::X,900 - app.parsers.nmap_parser - INFO - Processed 48700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.904327622Z 2026-04-01 X:X:X::X,904 - app.parsers.nmap_parser - INFO - Processed 48800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.906308584Z 2026-04-01 X:X:X::X,906 - app.parsers.nmap_parser - INFO - Processed 48900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.908533183Z 2026-04-01 X:X:X::X,908 - app.parsers.nmap_parser - INFO - Processed 49000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.911648583Z 2026-04-01 X:X:X::X,911 - app.parsers.nmap_parser - INFO - Processed 49100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.913745826Z 2026-04-01 X:X:X::X,913 - app.parsers.nmap_parser - INFO - Processed 49200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.915822216Z 2026-04-01 X:X:X::X,915 - app.parsers.nmap_parser - INFO - Processed 49300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.918871633Z 2026-04-01 X:X:X::X,918 - app.parsers.nmap_parser - INFO - Processed 49400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.920993544Z 2026-04-01 X:X:X::X,920 - app.parsers.nmap_parser - INFO - Processed 49500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.924214335Z 2026-04-01 X:X:X::X,924 - app.parsers.nmap_parser - INFO - Processed 49600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.926123959Z 2026-04-01 X:X:X::X,926 - app.parsers.nmap_parser - INFO - Processed 49700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.928335472Z 2026-04-01 X:X:X::X,928 - app.parsers.nmap_parser - INFO - Processed 49800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.931467073Z 2026-04-01 X:X:X::X,931 - app.parsers.nmap_parser - INFO - Processed 49900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.933586079Z 2026-04-01 X:X:X::X,933 - app.parsers.nmap_parser - INFO - Processed 50000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.935701872Z 2026-04-01 X:X:X::X,935 - app.parsers.nmap_parser - INFO - Processed 50100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.938791180Z 2026-04-01 X:X:X::X,938 - app.parsers.nmap_parser - INFO - Processed 50200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.940939631Z 2026-04-01 X:X:X::X,940 - app.parsers.nmap_parser - INFO - Processed 50300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.944093354Z 2026-04-01 X:X:X::X,944 - app.parsers.nmap_parser - INFO - Processed 50400 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.946075052Z 2026-04-01 X:X:X::X,946 - app.parsers.nmap_parser - INFO - Processed 50500 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.948214689Z 2026-04-01 X:X:X::X,948 - app.parsers.nmap_parser - INFO - Processed 50600 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.951377733Z 2026-04-01 X:X:X::X,951 - app.parsers.nmap_parser - INFO - Processed 50700 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.953405643Z 2026-04-01 X:X:X::X,953 - app.parsers.nmap_parser - INFO - Processed 50800 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.955618236Z 2026-04-01 X:X:X::X,955 - app.parsers.nmap_parser - INFO - Processed 50900 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.958729523Z 2026-04-01 X:X:X::X,958 - app.parsers.nmap_parser - INFO - Processed 51000 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.960825007Z 2026-04-01 X:X:X::X,960 - app.parsers.nmap_parser - INFO - Processed 51100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.962941429Z 2026-04-01 X:X:X::X,962 - app.parsers.nmap_parser - INFO - Processed 51200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.963478680Z 2026-04-01 X:X:X::X,963 - app.parsers.nmap_parser - WARNING - XML parsing halted for all_subnets_from_CO_office_INC.xml (likely truncated/incomplete scan): Extra content at the end of the document, line 158019, column 1 (all_subnets_from_CO_office_INC.xml, line 158019). Recovered 51204 hosts before the error.
+backend-1   | 2026-04-01TX:X:X::X.963532730Z 2026-04-01 X:X:X::X,963 - app.parsers.nmap_parser - WARNING - Scan all_subnets_from_CO_office_INC.xml completed with 1 warning(s): 51204 hosts recovered
+backend-1   | 2026-04-01TX:X:X::X.963549004Z 2026-04-01 X:X:X::X,963 - app.parsers.nmap_parser - INFO - Starting subnet correlation for scan 3
+backend-1   | 2026-04-01TX:X:X::X.032485629Z 2026-04-01 X:X:X::X,032 - app.parsers.nmap_parser - ERROR - Error in subnet correlation: maximum recursion depth exceeded
+backend-1   | 2026-04-01TX:X:X::X.033669616Z 2026-04-01 X:X:X::X,033 - app.parsers.nmap_parser - INFO - Parsed 51204 host records from all_subnets_from_CO_office_INC.xml
+backend-1   | 2026-04-01TX:X:X::X.033736915Z 2026-04-01 X:X:X::X,033 - app.parsers.nmap_parser - INFO - Successfully parsed all_subnets_from_CO_office_INC.xml in 3.39 seconds
+backend-1   | 2026-04-01TX:X:X::X.055336807Z 2026-04-01 X:X:X::X,055 - app.services.ingestion_service - WARNING - Job 3: parser NmapXMLParser failed after 3.41s: Can't reconnect until invalid savepoint transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+backend-1   | 2026-04-01TX:X:X::X.056595951Z 2026-04-01 X:X:X::X,056 - app.services.ingestion_service - INFO - Job 3: attempting parser MasscanParser for all_subnets_from_CO_office_INC.xml
+backend-1   | 2026-04-01TX:X:X::X.033599422Z 2026-04-01 X:X:X::X,033 - app.parsers.masscan_parser - WARNING - Masscan XML parsing halted for /tmp/networkmapper_ingestion/061e55a157624f9d8657998f034ab79f/0fbddb9aff474999b08b72f56cf27e3f/all_subnets_from_CO_office_INC.xml near line=158019 column=1 (likely truncated/incomplete scan). Recovered 71 hosts before error: Extra content at the end of the document, line 158019, column 1 (all_subnets_from_CO_office_INC.xml, line 158019)
+backend-1   | 2026-04-01TX:X:X::X.096628273Z 2026-04-01 X:X:X::X,096 - app.parsers.masscan_parser - WARNING - Masscan scan 4 correlation failed: maximum recursion depth exceeded
+backend-1   | 2026-04-01TX:X:X::X.120025155Z 2026-04-01 X:X:X::X,117 - app.parsers.masscan_parser - ERROR - Masscan parser failed for all_subnets_from_CO_office_INC.xml
+backend-1   | 2026-04-01TX:X:X::X.120040275Z Traceback (most recent call last):
+backend-1   | 2026-04-01TX:X:X::X.120043133Z   File "/app/app/parsers/masscan_parser.py", line 56, in parse_file
+backend-1   | 2026-04-01TX:X:X::X.120045901Z     self.db.commit()
+backend-1   | 2026-04-01TX:X:X::X.120048314Z   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+backend-1   | 2026-04-01TX:X:X::X.120061561Z     trans.commit(_to_root=True)
+backend-1   | 2026-04-01TX:X:X::X.120063378Z   File "<string>", line 2, in commit
+backend-1   | 2026-04-01TX:X:X::X.120065382Z   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+backend-1   | 2026-04-01TX:X:X::X.120067245Z     ret_value = fn(self, *arg, **kw)
+backend-1   | 2026-04-01TX:X:X::X.120068966Z                 ^^^^^^^^^^^^^^^^^^^^
+backend-1   | 2026-04-01TX:X:X::X.120070586Z   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1320, in commit
+backend-1   | 2026-04-01TX:X:X::X.120072475Z     trans.commit()
+backend-1   | 2026-04-01TX:X:X::X.120074147Z   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2632, in commit
+backend-1   | 2026-04-01TX:X:X::X.120075902Z     self._do_commit()
+backend-1   | 2026-04-01TX:X:X::X.120077573Z   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2868, in _do_commit
+backend-1   | 2026-04-01TX:X:X::X.120079402Z     self.connection._invalid_transaction()
+frontend-1  | 2026-04-01TX:X:X::X.483001080Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.149461211Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.392763580Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.635882257Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.880493726Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.990244048Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.122275511Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.068129284Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.555434732Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.556480392Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.556494755Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.557686007Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.558142252Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.558433872Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.566652966Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.567057175Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.567454885Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.695231245Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.128011429Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.463419748Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.705976288Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.949470166Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.197047556Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.306601124Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.191872289Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.489133510Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.603022800Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.542118325Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.815563217Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.909228539Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.003277985Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.164751321Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.268540451Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.440420462Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.537321516Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.748493783Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.008176476Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.223812737Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.392472019Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.343859827Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.543504619Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.648293733Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.492589544Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.802223907Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.975793836Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.388891919Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.536571406Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.408971540Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.638878179Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.744696416Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.956193554Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.096306770Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.275454652Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.469049188Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.476257271Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.582679103Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.495669701Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.784972748Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.893746978Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.132753856Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.375482042Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.500233908Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.544741532Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.671263560Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.768741390Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.875040303Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.064492256Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.308222249Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.608026606Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.551586142Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.792770091Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.502272422Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.923167742Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.084677303Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.185489756Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.420385710Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.671941246Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.736146732Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.800585565Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.868448843Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.014013106Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /assets/index-D4v3p1uG.js.map HTTP/2.0" 200 4067019 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.597329904Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /assets/index-D4v3p1uG.js.map HTTP/2.0" 200 1941504 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.504397352Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/scans/?skip=0&limit=100 HTTP/2.0" 200 371 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.505153878Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.509989897Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=6 HTTP/2.0" 200 749 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.510001551Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/stats HTTP/2.0" 200 828 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.510005106Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/dashboard/risk-insights HTTP/2.0" 200 890 "https://X.X.X.X/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.512052330Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.514531763Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.522834107Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.525227559Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.527503527Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.528112422Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.528842696Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.530974578Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.944252750Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.653168635Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.771163822Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.933075328Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.041093941Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.143839520Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.020016792Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.305113758Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.488357932Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.058280541Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.599564864Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.746447793Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.880052649Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.023040939Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.081058422Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.150407402Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.333940320Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.479052412Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.636420975Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.978819725Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.209443843Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.145475582Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.822445239Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.089952550Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/hosts/notes/unread-count HTTP/2.0" 200 18 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.360176344Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.497423080Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.605242351Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.212257860Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.218592990Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.218634911Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.219701507Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.551337675Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.576585549Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 749 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.074307243Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.288213005Z 127.0.0.1 - - [01/Apr/X:X:X::X +0000] "GET / HTTP/2.0" 200 599 "-" "curl/8.17.0" "-"
+frontend-1  | 2026-04-01TX:X:X::X.636821017Z X.X.X.X - - [01/Apr/X:X:X::X +0000] "GET /api/v1/upload/jobs?limit=25 HTTP/2.0" 200 754 "https://X.X.X.X/scans" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" "-"
+backend-1   | 2026-04-01TX:X:X::X.120081042Z   File "/opt/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 663, in _invalid_transaction
+backend-1   | 2026-04-01TX:X:X::X.120082815Z     raise exc.PendingRollbackError(
+backend-1   | 2026-04-01TX:X:X::X.120084573Z sqlalchemy.exc.PendingRollbackError: Can't reconnect until invalid savepoint transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+backend-1   | 2026-04-01TX:X:X::X.120089019Z 2026-04-01 X:X:X::X,119 - app.services.ingestion_service - WARNING - Job 3: parser MasscanParser failed after 2.06s: Can't reconnect until invalid savepoint transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+backend-1   | 2026-04-01TX:X:X::X.121796253Z 2026-04-01 X:X:X::X,121 - app.services.ingestion_service - INFO - Job 3: attempting parser NessusIntegrationService for all_subnets_from_CO_office_INC.xml
+backend-1   | 2026-04-01TX:X:X::X.123900331Z 2026-04-01 X:X:X::X,123 - app.services.nessus_integration_service - ERROR - Error processing Nessus file /tmp/networkmapper_ingestion/061e55a157624f9d8657998f034ab79f/0fbddb9aff474999b08b72f56cf27e3f/all_subnets_from_CO_office_INC.xml: Not a valid Nessus XML file
+backend-1   | 2026-04-01TX:X:X::X.123948594Z 2026-04-01 X:X:X::X,123 - app.services.ingestion_service - WARNING - Job 3: parser NessusIntegrationService failed after 0.00s: Nessus processing failed
+backend-1   | 2026-04-01TX:X:X::X.132281899Z 2026-04-01 X:X:X::X,132 - app.services.ingestion_service - WARNING - Failed ingestion job 3 due to parse error: Failed to parse the XML file 'all_subnets_from_CO_office_INC.xml'. The file may be malformed, corrupted, or not a valid Nmap XML output file.
+backend-1   | 2026-04-01TX:X:X::X.785246586Z INFO:     X.X.X.X:53988 - "GET /api/v1/upload/jobs/3 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.273663688Z 2026-04-01 X:X:X::X,273 - app.services.ingestion_service - INFO - Queued ingestion job 4 for nmap_sS_t4_all_ports_internal.xml (35388 bytes)
+backend-1   | 2026-04-01TX:X:X::X.274869594Z INFO:     X.X.X.X:45418 - "POST /api/v1/upload/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.277530521Z 2026-04-01 X:X:X::X,277 - app.services.ingestion_service - INFO - Job 4: attempting parser NmapXMLParser for nmap_sS_t4_all_ports_internal.xml
+backend-1   | 2026-04-01TX:X:X::X.277585777Z 2026-04-01 X:X:X::X,277 - app.parsers.nmap_parser - INFO - Starting streamed parse of nmap_sS_t4_all_ports_internal.xml
+backend-1   | 2026-04-01TX:X:X::X.669669831Z 2026-04-01 X:X:X::X,669 - app.parsers.nmap_parser - WARNING - XML parsing halted for nmap_sS_t4_all_ports_internal.xml (likely truncated/incomplete scan): Premature end of data in tag nmaprun line 5, line 674, column 1 (nmap_sS_t4_all_ports_internal.xml, line 674). Recovered 8 hosts before the error.
+backend-1   | 2026-04-01TX:X:X::X.669696367Z 2026-04-01 X:X:X::X,669 - app.parsers.nmap_parser - WARNING - Scan nmap_sS_t4_all_ports_internal.xml completed with 1 warning(s): 8 hosts recovered
+backend-1   | 2026-04-01TX:X:X::X.669723657Z 2026-04-01 X:X:X::X,669 - app.parsers.nmap_parser - INFO - Starting subnet correlation for scan 6
+backend-1   | 2026-04-01TX:X:X::X.698528522Z 2026-04-01 X:X:X::X,698 - app.services.subnet_correlation - INFO - Correlated 7 hosts to 196 subnets (7 mappings)
+backend-1   | 2026-04-01TX:X:X::X.698797733Z 2026-04-01 X:X:X::X,698 - app.parsers.nmap_parser - INFO - Correlated 7 hosts to subnets
+backend-1   | 2026-04-01TX:X:X::X.698819113Z 2026-04-01 X:X:X::X,698 - app.parsers.nmap_parser - INFO - Parsed 8 host records from nmap_sS_t4_all_ports_internal.xml
+backend-1   | 2026-04-01TX:X:X::X.698865022Z 2026-04-01 X:X:X::X,698 - app.parsers.nmap_parser - INFO - Successfully parsed nmap_sS_t4_all_ports_internal.xml in 0.42 seconds
+backend-1   | 2026-04-01TX:X:X::X.699978517Z 2026-04-01 X:X:X::X,699 - app.services.ingestion_service - INFO - Job 4: parser NmapXMLParser succeeded in 0.42s
+backend-1   | 2026-04-01TX:X:X::X.138323291Z INFO:     X.X.X.X:45420 - "GET /api/v1/upload/jobs/3 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.212008691Z INFO:     X.X.X.X:45436 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.787157923Z INFO:     X.X.X.X:45464 - "GET /api/v1/upload/jobs?limit=6 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.791934223Z INFO:     X.X.X.X:45450 - "GET /api/v1/dashboard/risk-insights HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.825733926Z INFO:     X.X.X.X:45440 - "GET /api/v1/dashboard/stats HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.854476562Z 2026-04-01 X:X:X::X,854 - app.services.ingestion_service - INFO - Queued ingestion job 5 for nmap_on_masscan_live_hosts_sV_sC_O_t4_minpar_64_mxretry_1_all_ports.xml (6767624 bytes)
+backend-1   | 2026-04-01TX:X:X::X.856360621Z INFO:     X.X.X.X:41222 - "POST /api/v1/upload/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.858592124Z 2026-04-01 X:X:X::X,858 - app.services.ingestion_service - INFO - Job 5: attempting parser NmapXMLParser for nmap_on_masscan_live_hosts_sV_sC_O_t4_minpar_64_mxretry_1_all_ports.xml
+backend-1   | 2026-04-01TX:X:X::X.858724486Z 2026-04-01 X:X:X::X,858 - app.parsers.nmap_parser - INFO - Starting streamed parse of nmap_on_masscan_live_hosts_sV_sC_O_t4_minpar_64_mxretry_1_all_ports.xml
+backend-1   | 2026-04-01TX:X:X::X.299394819Z INFO:     X.X.X.X:41246 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.306524931Z INFO:     X.X.X.X:41232 - "GET /api/v1/scans/?skip=0&limit=100 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.147948484Z 2026-04-01 X:X:X::X,147 - app.services.ingestion_service - INFO - Queued ingestion job 6 for quantum-basic network_6vaa45.nessus (32248159 bytes)
+backend-1   | 2026-04-01TX:X:X::X.153077899Z INFO:     X.X.X.X:41248 - "POST /api/v1/upload/ HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.155476266Z 2026-04-01 X:X:X::X,155 - app.services.ingestion_service - INFO - Job 6: attempting parser NessusIntegrationService for quantum-basic network_6vaa45.nessus
+backend-1   | 2026-04-01TX:X:X::X.278206682Z 2026-04-01 X:X:X::X,278 - app.services.nessus_integration_service - INFO - Processed 41 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.379983425Z 2026-04-01 X:X:X::X,379 - app.services.nessus_integration_service - INFO - Processed 38 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.475542283Z 2026-04-01 X:X:X::X,475 - app.services.nessus_integration_service - INFO - Processed 38 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.579776960Z 2026-04-01 X:X:X::X,579 - app.services.nessus_integration_service - INFO - Processed 39 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.690632442Z 2026-04-01 X:X:X::X,690 - app.services.nessus_integration_service - INFO - Processed 43 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.791121846Z 2026-04-01 X:X:X::X,790 - app.services.nessus_integration_service - INFO - Processed 40 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.900558031Z 2026-04-01 X:X:X::X,900 - app.services.nessus_integration_service - INFO - Processed 40 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.015010381Z 2026-04-01 X:X:X::X,014 - app.services.nessus_integration_service - INFO - Processed 41 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.135230671Z 2026-04-01 X:X:X::X,135 - app.services.nessus_integration_service - INFO - Processed 54 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.263574352Z 2026-04-01 X:X:X::X,263 - app.services.nessus_integration_service - INFO - Processed 54 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.391184969Z 2026-04-01 X:X:X::X,391 - app.services.nessus_integration_service - INFO - Processed 54 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.451888366Z 2026-04-01 X:X:X::X,451 - app.services.nessus_integration_service - INFO - Processed 22 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.504547022Z 2026-04-01 X:X:X::X,504 - app.services.nessus_integration_service - INFO - Processed 26 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.548315577Z 2026-04-01 X:X:X::X,548 - app.services.nessus_integration_service - INFO - Processed 23 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.620128428Z 2026-04-01 X:X:X::X,619 - app.services.nessus_integration_service - INFO - Processed 35 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.679449670Z 2026-04-01 X:X:X::X,679 - app.services.nessus_integration_service - INFO - Processed 29 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.783506732Z 2026-04-01 X:X:X::X,783 - app.services.nessus_integration_service - INFO - Processed 46 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.962321726Z 2026-04-01 X:X:X::X,962 - app.services.nessus_integration_service - INFO - Processed 81 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.128921896Z 2026-04-01 X:X:X::X,128 - app.services.nessus_integration_service - INFO - Processed 68 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.315011665Z 2026-04-01 X:X:X::X,314 - app.services.nessus_integration_service - INFO - Processed 78 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.585911145Z 2026-04-01 X:X:X::X,585 - app.services.nessus_integration_service - INFO - Processed 122 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.855862671Z 2026-04-01 X:X:X::X,855 - app.services.nessus_integration_service - INFO - Processed 112 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.208818865Z 2026-04-01 X:X:X::X,208 - app.services.nessus_integration_service - INFO - Processed 113 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.232546345Z 2026-04-01 X:X:X::X,232 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.244712769Z 2026-04-01 X:X:X::X,244 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.257420875Z 2026-04-01 X:X:X::X,257 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.270690904Z 2026-04-01 X:X:X::X,270 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.283333209Z 2026-04-01 X:X:X::X,283 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.290761160Z 2026-04-01 X:X:X::X,290 - app.services.nessus_integration_service - INFO - Processed 2 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.298248447Z 2026-04-01 X:X:X::X,298 - app.services.nessus_integration_service - INFO - Processed 2 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.305958619Z 2026-04-01 X:X:X::X,305 - app.services.nessus_integration_service - INFO - Processed 2 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.318003721Z 2026-04-01 X:X:X::X,317 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.375050024Z 2026-04-01 X:X:X::X,374 - app.services.nessus_integration_service - INFO - Processed 25 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.434788900Z 2026-04-01 X:X:X::X,434 - app.services.nessus_integration_service - INFO - Processed 25 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.494434789Z 2026-04-01 X:X:X::X,494 - app.services.nessus_integration_service - INFO - Processed 25 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.554318949Z 2026-04-01 X:X:X::X,554 - app.services.nessus_integration_service - INFO - Processed 25 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.873959807Z 2026-04-01 X:X:X::X,873 - app.services.nessus_integration_service - INFO - Processed 135 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.977763178Z 2026-04-01 X:X:X::X,977 - app.services.nessus_integration_service - INFO - Processed 43 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.046589752Z 2026-04-01 X:X:X::X,046 - app.services.nessus_integration_service - INFO - Processed 29 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.063320691Z 2026-04-01 X:X:X::X,063 - app.services.nessus_integration_service - INFO - Processed 4 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.105752993Z 2026-04-01 X:X:X::X,105 - app.services.nessus_integration_service - INFO - Processed 16 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.122600545Z 2026-04-01 X:X:X::X,122 - app.services.nessus_integration_service - INFO - Processed 6 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.138048229Z 2026-04-01 X:X:X::X,137 - app.services.nessus_integration_service - INFO - Processed 6 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.159337052Z 2026-04-01 X:X:X::X,159 - app.services.nessus_integration_service - INFO - Processed 9 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.193937278Z 2026-04-01 X:X:X::X,193 - app.services.nessus_integration_service - INFO - Processed 13 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.270296401Z 2026-04-01 X:X:X::X,270 - app.services.nessus_integration_service - INFO - Processed 26 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.343603261Z 2026-04-01 X:X:X::X,343 - app.services.nessus_integration_service - INFO - Processed 25 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.360254168Z 2026-04-01 X:X:X::X,360 - app.services.nessus_integration_service - INFO - Processed 6 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.378356030Z 2026-04-01 X:X:X::X,378 - app.services.nessus_integration_service - INFO - Processed 8 vulnerabilities for host X.X.X.X
+backend-1   | 2026-04-01TX:X:X::X.410061038Z INFO:     X.X.X.X:41262 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.381430287Z 2026-04-01 X:X:X::X,381 - app.services.nessus_integration_service - ERROR - Error processing Nessus host X.X.X.X: (psycopg2.errors.DeadlockDetected) deadlock detected
+backend-1   | 2026-04-01TX:X:X::X.381448751Z DETAIL:  Process 204 waits for ShareLock on transaction 2159; blocked by process 203.
+backend-1   | 2026-04-01TX:X:X::X.381451409Z Process 203 waits for ShareLock on transaction 2579; blocked by process 204.
+backend-1   | 2026-04-01TX:X:X::X.381453311Z HINT:  See server log for query details.
+backend-1   | 2026-04-01TX:X:X::X.381455087Z CONTEXT:  while inserting index tuple (4,1) in relation "ix_hosts_v2_ip_address"
+backend-1   | 2026-04-01TX:X:X::X.381457054Z 
+backend-1   | 2026-04-01TX:X:X::X.381458694Z [SQL: INSERT INTO hosts_v2 (ip_address, hostname, state, state_reason, os_name, os_family, os_generation, os_type, os_vendor, os_accuracy, last_updated_scan_id) VALUES (%(ip_address)s, %(hostname)s, %(state)s, %(state_reason)s, %(os_name)s, %(os_family)s, %(os_generation)s, %(os_type)s, %(os_vendor)s, %(os_accuracy)s, %(last_updated_scan_id)s) RETURNING hosts_v2.id, hosts_v2.first_seen, hosts_v2.last_seen]
+backend-1   | 2026-04-01TX:X:X::X.381461326Z [parameters: {'ip_address': 'X.X.X.X', 'hostname': None, 'state': 'up', 'state_reason': None, 'os_name': 'ArubaOS-CX - R9\nCisco Catalyst 9200 Series Switches\nCisco Catalyst 9300 Series Switches\nCisco Catalyst IE9300 Rugged Series\nNutanix', 'os_family': None, 'os_generation': None, 'os_type': None, 'os_vendor': None, 'os_accuracy': None, 'last_updated_scan_id': 8}]
+backend-1   | 2026-04-01TX:X:X::X.381464033Z (Background on this error at: https://sqlalche.me/e/20/e3q8)
+backend-1   | 2026-04-01TX:X:X::X.394151852Z 2026-04-01 X:X:X::X,394 - app.services.nessus_integration_service - ERROR - Error processing Nessus file /tmp/networkmapper_ingestion/061e55a157624f9d8657998f034ab79f/05a33d70cb394ad58c74755623a7af62/quantum-basic network_6vaa45.nessus: Scan record disappeared during Nessus ingestion
+backend-1   | 2026-04-01TX:X:X::X.394182375Z 2026-04-01 X:X:X::X,394 - app.services.ingestion_service - WARNING - Job 6: parser NessusIntegrationService failed after 5.24s: Nessus processing failed
+backend-1   | 2026-04-01TX:X:X::X.402080497Z 2026-04-01 X:X:X::X,401 - app.services.ingestion_service - WARNING - Failed ingestion job 6 due to parse error: Failed to parse the XML file 'quantum-basic network_6vaa45.nessus'. The file may be malformed, corrupted, or not a valid nessus_xml output file.
+backend-1   | 2026-04-01TX:X:X::X.496478185Z INFO:     127.0.0.1:54460 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.114785317Z 2026-04-01 X:X:X::X,114 - app.parsers.nmap_parser - INFO - Processed 100 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.546526514Z INFO:     X.X.X.X:39592 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.587194608Z 2026-04-01 X:X:X::X,587 - app.parsers.nmap_parser - INFO - Processed 200 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.204178888Z 2026-04-01 X:X:X::X,204 - app.parsers.nmap_parser - INFO - Processed 300 hosts so far
+backend-1   | 2026-04-01TX:X:X::X.535970740Z 2026-04-01 X:X:X::X,535 - app.parsers.nmap_parser - INFO - Starting subnet correlation for scan 7
+backend-1   | 2026-04-01TX:X:X::X.674924750Z INFO:     X.X.X.X:39598 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.684457371Z 2026-04-01 X:X:X::X,684 - app.parsers.nmap_parser - ERROR - Error in subnet correlation: maximum recursion depth exceeded
+backend-1   | 2026-04-01TX:X:X::X.685886278Z 2026-04-01 X:X:X::X,685 - app.parsers.nmap_parser - INFO - Parsed 350 host records from nmap_on_masscan_live_hosts_sV_sC_O_t4_minpar_64_mxretry_1_all_ports.xml
+backend-1   | 2026-04-01TX:X:X::X.685985942Z 2026-04-01 X:X:X::X,685 - app.parsers.nmap_parser - INFO - Successfully parsed nmap_on_masscan_live_hosts_sV_sC_O_t4_minpar_64_mxretry_1_all_ports.xml in 16.83 seconds
+backend-1   | 2026-04-01TX:X:X::X.841174963Z INFO:     X.X.X.X:35328 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.956741755Z INFO:     X.X.X.X:35336 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.133367396Z INFO:     X.X.X.X:55238 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.479732347Z INFO:     X.X.X.X:55248 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.244901925Z INFO:     X.X.X.X:55258 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.563652074Z INFO:     127.0.0.1:50258 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.361555590Z INFO:     X.X.X.X:41102 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.471209862Z INFO:     X.X.X.X:34066 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.619934646Z INFO:     X.X.X.X:34072 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.736249469Z INFO:     X.X.X.X:37162 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.864076687Z INFO:     X.X.X.X:37178 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.623375621Z INFO:     127.0.0.1:34740 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.031261442Z INFO:     X.X.X.X:56624 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.153113470Z INFO:     X.X.X.X:56634 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.340779684Z INFO:     X.X.X.X:44544 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.546850306Z INFO:     X.X.X.X:44558 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.723648322Z INFO:     X.X.X.X:50740 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.683487388Z INFO:     127.0.0.1:48516 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.028840526Z INFO:     X.X.X.X:36000 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.029530905Z INFO:     X.X.X.X:35992 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.031010651Z INFO:     X.X.X.X:36008 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.031350861Z INFO:     X.X.X.X:36016 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.032328197Z INFO:     X.X.X.X:36020 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.373524871Z INFO:     X.X.X.X:42548 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.589658511Z INFO:     X.X.X.X:42562 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.747358688Z INFO:     127.0.0.1:39306 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.769360561Z INFO:     X.X.X.X:53306 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.177609426Z INFO:     X.X.X.X:53318 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.420885579Z INFO:     X.X.X.X:36742 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.732236585Z INFO:     X.X.X.X:36744 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.907356606Z INFO:     X.X.X.X:50756 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.482725468Z INFO:     X.X.X.X:50758 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.148971405Z INFO:     X.X.X.X:50766 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.825613262Z INFO:     127.0.0.1:59598 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.392353007Z INFO:     X.X.X.X:45736 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.635435704Z INFO:     X.X.X.X:59164 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.880052146Z INFO:     X.X.X.X:59166 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.121850207Z INFO:     X.X.X.X:33656 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.888199350Z INFO:     127.0.0.1:51504 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.951667510Z INFO:     127.0.0.1:58520 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.553478661Z INFO:     X.X.X.X:44476 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.555458495Z INFO:     X.X.X.X:44468 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.555463698Z INFO:     X.X.X.X:44480 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.558578857Z INFO:     X.X.X.X:44494 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.558585919Z INFO:     X.X.X.X:44488 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.558588724Z INFO:     X.X.X.X:44482 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.564621422Z INFO:     X.X.X.X:44506 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.566712623Z INFO:     X.X.X.X:44500 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.567022802Z INFO:     X.X.X.X:44492 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.694829668Z INFO:     X.X.X.X:44518 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.463006730Z INFO:     X.X.X.X:59240 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.705557013Z INFO:     X.X.X.X:59244 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.015432318Z INFO:     127.0.0.1:55078 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.948998480Z INFO:     X.X.X.X:59858 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.196584966Z INFO:     X.X.X.X:59872 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.306068913Z INFO:     X.X.X.X:51142 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.488703297Z INFO:     X.X.X.X:51152 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.602552772Z INFO:     X.X.X.X:42162 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.541870510Z INFO:     X.X.X.X:42168 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.815146971Z INFO:     X.X.X.X:42184 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.079348935Z INFO:     127.0.0.1:36660 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.908781646Z INFO:     X.X.X.X:46722 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.002807789Z INFO:     X.X.X.X:46724 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.164316919Z INFO:     X.X.X.X:56080 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.439990131Z INFO:     X.X.X.X:56084 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.536822472Z INFO:     X.X.X.X:58812 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.748012946Z INFO:     X.X.X.X:58814 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.143486868Z INFO:     127.0.0.1:45028 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.007735056Z INFO:     X.X.X.X:42206 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.221743886Z INFO:     X.X.X.X:42210 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.392017061Z INFO:     X.X.X.X:58762 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.543046514Z INFO:     X.X.X.X:39416 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.647823431Z INFO:     X.X.X.X:39420 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.492305445Z INFO:     X.X.X.X:39426 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.801796820Z INFO:     X.X.X.X:46414 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.212113210Z INFO:     127.0.0.1:45028 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.975323936Z INFO:     X.X.X.X:46428 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.388448485Z INFO:     X.X.X.X:59452 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.536102826Z INFO:     X.X.X.X:59464 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.638404295Z INFO:     X.X.X.X:39866 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.744241497Z INFO:     X.X.X.X:39870 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.287441671Z INFO:     127.0.0.1:41664 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.955762855Z INFO:     X.X.X.X:42552 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.095821095Z INFO:     X.X.X.X:42568 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.274999951Z INFO:     X.X.X.X:49852 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.468603499Z INFO:     X.X.X.X:49862 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.582212743Z INFO:     X.X.X.X:60586 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.495388588Z INFO:     X.X.X.X:60596 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.784496989Z INFO:     X.X.X.X:60600 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.351628916Z INFO:     127.0.0.1:50274 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.893287911Z INFO:     X.X.X.X:45168 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.132304512Z INFO:     X.X.X.X:45176 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.375049722Z INFO:     X.X.X.X:49156 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.499774573Z INFO:     X.X.X.X:49170 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.670825122Z INFO:     X.X.X.X:55214 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.768289598Z INFO:     X.X.X.X:55228 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.411464074Z INFO:     127.0.0.1:52866 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.874618792Z INFO:     X.X.X.X:52472 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.064045070Z INFO:     X.X.X.X:52484 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.307783867Z INFO:     X.X.X.X:51512 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.551134155Z INFO:     X.X.X.X:51522 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.792312371Z INFO:     X.X.X.X:36644 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.502016610Z INFO:     X.X.X.X:36648 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.922733950Z INFO:     X.X.X.X:36654 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.471574610Z INFO:     127.0.0.1:60898 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.084240268Z INFO:     X.X.X.X:60334 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.185025197Z INFO:     X.X.X.X:60344 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.419874993Z INFO:     X.X.X.X:44602 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.535776914Z INFO:     127.0.0.1:57706 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.599905157Z INFO:     127.0.0.1:53518 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.663433308Z INFO:     127.0.0.1:46186 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.742702786Z INFO:     127.0.0.1:44666 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.498900244Z INFO:     X.X.X.X:40032 - "GET /api/v1/scans/?skip=0&limit=100 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.504654212Z INFO:     X.X.X.X:40064 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.505100770Z INFO:     X.X.X.X:40046 - "GET /api/v1/upload/jobs?limit=6 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.505612953Z INFO:     X.X.X.X:40020 - "GET /api/v1/dashboard/stats HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.508631307Z INFO:     X.X.X.X:40054 - "GET /api/v1/dashboard/risk-insights HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.509951718Z INFO:     X.X.X.X:40078 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.513186089Z INFO:     X.X.X.X:40118 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.521763844Z INFO:     X.X.X.X:40096 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.524921206Z INFO:     X.X.X.X:40084 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.527033934Z INFO:     X.X.X.X:40128 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.527759849Z INFO:     X.X.X.X:40132 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.528488848Z INFO:     X.X.X.X:40130 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.530766113Z INFO:     X.X.X.X:40112 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.652747056Z INFO:     X.X.X.X:36836 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.770711987Z INFO:     X.X.X.X:36846 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.799643300Z INFO:     127.0.0.1:47838 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.932639492Z INFO:     X.X.X.X:40432 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.040607630Z INFO:     X.X.X.X:40442 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.143381813Z INFO:     X.X.X.X:53292 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.304652709Z INFO:     X.X.X.X:53304 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.487852551Z INFO:     X.X.X.X:40862 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.057903413Z INFO:     X.X.X.X:40878 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.599092660Z INFO:     X.X.X.X:40882 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.859434697Z INFO:     127.0.0.1:49148 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.745979224Z INFO:     X.X.X.X:50806 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.879599160Z INFO:     X.X.X.X:50822 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.022580758Z INFO:     X.X.X.X:35090 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.149954765Z INFO:     X.X.X.X:35102 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.333480579Z INFO:     X.X.X.X:56120 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.478607130Z INFO:     X.X.X.X:48400 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.935700559Z INFO:     127.0.0.1:49140 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.635903496Z INFO:     X.X.X.X:48406 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.978353850Z INFO:     X.X.X.X:41678 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.208982095Z INFO:     X.X.X.X:41692 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.822017244Z INFO:     X.X.X.X:44014 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.089676299Z INFO:     X.X.X.X:44024 - "GET /api/v1/hosts/notes/unread-count HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.359774533Z INFO:     X.X.X.X:44034 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.999771439Z INFO:     127.0.0.1:46906 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.496958873Z INFO:     X.X.X.X:41126 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.604852668Z INFO:     X.X.X.X:41128 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.217975033Z INFO:     X.X.X.X:54558 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.218255928Z INFO:     X.X.X.X:54568 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.219366103Z INFO:     X.X.X.X:54542 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.085552150Z INFO:     127.0.0.1:56388 - "GET /health HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.550927628Z INFO:     X.X.X.X:54348 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.576153466Z INFO:     X.X.X.X:39596 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.073856311Z INFO:     X.X.X.X:39612 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
+backend-1   | 2026-04-01TX:X:X::X.636250789Z INFO:     X.X.X.X:35564 - "GET /api/v1/upload/jobs?limit=25 HTTP/1.1" 200 OK
